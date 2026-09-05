@@ -54,34 +54,43 @@ html {
 body {
   margin: 0;
 
-  background: var(--white);
+  background:
+    var(--white);
 
-  color: var(--blue);
+  color:
+    var(--blue);
 
   font-family:
     Helvetica,
     Arial,
     sans-serif;
 
-  line-height: 1.5;
+  line-height:
+    1.5;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color:
+    inherit;
+
+  text-decoration:
+    none;
 }
 
 button,
 input,
 textarea,
 select {
-  font: inherit;
+  font:
+    inherit;
 }
 
 img,
 svg {
-  max-width: 100%;
+  max-width:
+    100%;
 }
+
 
 h1,
 h2,
@@ -118,7 +127,7 @@ h3,
 
 section.block {
   padding:
-    82px 0;
+    64px 0;
 
   background:
     var(--white);
@@ -137,12 +146,12 @@ section.block {
     820px;
 
   margin-bottom:
-    36px;
+    26px;
 }
 
 .eyebrow {
   margin:
-    0 0 16px;
+    0 0 14px;
 
   color:
     var(--blue);
@@ -177,10 +186,10 @@ section.block {
     var(--blue);
 
   font-size:
-    clamp(30px, 4vw, 42px);
+    clamp(30px, 4vw, 44px);
 
   line-height:
-    1.1;
+    1.08;
 
   letter-spacing:
     -0.03em;
@@ -214,7 +223,7 @@ section.block {
 
 .section-head p {
   margin:
-    16px 0 0;
+    12px 0 0;
 
   color:
     var(--slate);
@@ -223,7 +232,7 @@ section.block {
     18px;
 
   line-height:
-    1.8;
+    1.78;
 }
 
 .green,
@@ -236,20 +245,30 @@ section.block {
 
 /* =========================================================
    05. HEADER
+   Large image-only logo
 ========================================================= */
 
 .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position:
+    sticky;
 
-  background: rgba(6, 25, 53, 0.98);
+  top:
+    0;
+
+  z-index:
+    1000;
+
+  background:
+    rgba(6,25,53,.98);
 
   border-bottom:
-    1px solid rgba(255, 255, 255, 0.16);
+    1px solid rgba(255,255,255,.16);
 
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter:
+    blur(14px);
+
+  -webkit-backdrop-filter:
+    blur(14px);
 
   box-shadow:
     0 1px 0 rgba(255,255,255,.08),
@@ -257,128 +276,76 @@ section.block {
 }
 
 
-/* =========================================================
-   HEADER LAYOUT
-========================================================= */
+/* HEADER LAYOUT */
 
 .nav-inner {
-  min-height: 94px;
+  min-height:
+    94px;
 
-  display: flex;
+  display:
+    flex;
 
-  align-items: center;
+  align-items:
+    center;
 
-  justify-content: space-between;
+  justify-content:
+    space-between;
 
-  gap: 24px;
+  gap:
+    24px;
 }
 
 
 /* =========================================================
    LOGO
+   No white background
 ========================================================= */
+
 .brand {
-  display: flex;
-  align-items: center;
+  display:
+    flex;
 
-  flex-shrink: 0;
+  align-items:
+    center;
 
-  color: var(--white);
+  flex-shrink:
+    0;
+
+  color:
+    var(--white);
 }
 
-
-/* White background behind logo */
 
 .brand-logo {
-  height: 85px; /* ~90% of 94px header */
-  width: 150px;
+  height:
+    85px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width:
+    auto;
 
-  padding: 5px 8px;
+  display:
+    flex;
 
-  background: #ffffff;
-
-  border-radius: 14px;
-
-  overflow: hidden;
+  align-items:
+    center;
 }
 
-
-/* Actual logo image */
 
 .brand-logo img {
-  width: 100%;
-  height: 100%;
+  width:
+    auto;
 
-  display: block;
+  height:
+    85px;
 
-  object-fit: contain;
-}
+  max-width:
+    190px;
 
+  display:
+    block;
 
-/* =========================================================
-   RESPONSIVE LOGO
-========================================================= */
-
-@media (max-width: 1050px) {
-
-  .nav-inner {
-    min-height: 86px;
-  }
-
-  .brand-logo {
-    height: 77px;
-    width: 138px;
-
-    border-radius: 13px;
-  }
-
-}
-
-
-@media (max-width: 600px) {
-
-  .nav-inner {
-    min-height: 78px;
-  }
-
-  .brand-logo {
-    height: 70px;
-    width: 125px;
-
-    padding: 4px 7px;
-
-    border-radius: 12px;
-  }
-
-}
-
-.brand-name {
-  color: var(--white);
-
-  font-size: 22px;
-
-  font-weight: 700;
-
-  line-height: 1.1;
-}
-
-
-.brand-tag {
-  margin-top: 5px;
-
-  color: rgba(255,255,255,.85);
-
-  font-size: 11px;
-
-  font-weight: 500;
-
-  letter-spacing: .16em;
-
-  text-transform: uppercase;
+  object-fit:
+    contain;
 }
 
 
@@ -387,70 +354,89 @@ section.block {
 ========================================================= */
 
 .nav-links {
-  display: flex;
+  display:
+    flex;
 
-  align-items: center;
+  align-items:
+    center;
 
-  justify-content: center;
+  justify-content:
+    center;
 
-  gap: 6px;
+  gap:
+    6px;
 }
 
-
 .nav-links a {
-  position: relative;
+  position:
+    relative;
 
-  padding: 11px 13px;
+  padding:
+    11px 13px;
 
-  border-radius: 999px;
+  border-radius:
+    999px;
 
-  color: rgba(255,255,255,.95);
+  color:
+    rgba(255,255,255,.95);
 
-  font-size: 15px;
+  font-size:
+    15px;
 
-  font-weight: 600;
+  font-weight:
+    600;
 
-  line-height: 1.2;
+  line-height:
+    1.2;
 
   transition:
     background 180ms ease,
     transform 180ms ease;
 }
 
-
 .nav-links a:hover {
-  background: rgba(255,255,255,.10);
+  background:
+    rgba(255,255,255,.10);
 
-  transform: translateY(-1px);
+  transform:
+    translateY(-1px);
 }
-
-
-/* Gold underline */
 
 .nav-links a::after {
-  content: "";
+  content:
+    "";
 
-  position: absolute;
+  position:
+    absolute;
 
-  left: 18%;
-  right: 18%;
+  left:
+    18%;
 
-  bottom: 4px;
+  right:
+    18%;
 
-  height: 2px;
+  bottom:
+    4px;
 
-  border-radius: 999px;
+  height:
+    2px;
 
-  background: var(--gold);
+  border-radius:
+    999px;
 
-  transform: scaleX(0);
+  background:
+    var(--gold);
 
-  transition: transform 180ms ease;
+  transform:
+    scaleX(0);
+
+  transition:
+    transform 180ms ease;
 }
 
-
 .nav-links a:hover::after {
-  transform: scaleX(1);
+  transform:
+    scaleX(1);
 }
 
 
@@ -459,22 +445,31 @@ section.block {
 ========================================================= */
 
 .home-nav {
-  display: inline-grid !important;
+  display:
+    inline-grid !important;
 
-  place-items: center;
+  place-items:
+    center;
 
-  min-width: 44px;
-  min-height: 44px;
+  min-width:
+    44px;
 
-  padding: 10px !important;
+  min-height:
+    44px;
+
+  padding:
+    10px !important;
 }
 
-
 .home-nav svg {
-  width: 21px;
-  height: 21px;
+  width:
+    21px;
 
-  fill: var(--white);
+  height:
+    21px;
+
+  fill:
+    var(--white);
 }
 
 
@@ -483,27 +478,38 @@ section.block {
 ========================================================= */
 
 .nav-cta {
-  display: inline-flex;
+  display:
+    inline-flex;
 
-  align-items: center;
+  align-items:
+    center;
 
-  justify-content: center;
+  justify-content:
+    center;
 
-  padding: 13px 21px;
+  padding:
+    13px 21px;
 
-  border-radius: 999px;
+  border-radius:
+    999px;
 
-  background: var(--white);
+  background:
+    var(--white);
 
-  color: var(--blue);
+  color:
+    var(--blue);
 
-  font-size: 15px;
+  font-size:
+    15px;
 
-  font-weight: 700;
+  font-weight:
+    700;
 
-  line-height: 1.2;
+  line-height:
+    1.2;
 
-  white-space: nowrap;
+  white-space:
+    nowrap;
 
   transition:
     transform 180ms ease,
@@ -511,11 +517,12 @@ section.block {
     background 180ms ease;
 }
 
-
 .nav-cta:hover {
-  transform: translateY(-1px);
+  transform:
+    translateY(-1px);
 
-  background: var(--offwhite);
+  background:
+    var(--offwhite);
 
   box-shadow:
     inset 0 0 0 1px var(--gold);
@@ -523,37 +530,45 @@ section.block {
 
 
 /* =========================================================
-   MOBILE MENU BUTTON
+   MOBILE MENU
 ========================================================= */
 
 .menu-btn {
-  display: none;
+  display:
+    none;
 
-  width: 48px;
-  height: 48px;
+  width:
+    48px;
 
-  border: 0;
+  height:
+    48px;
 
-  border-radius: 999px;
+  border:
+    0;
 
-  background: rgba(255,255,255,.12);
+  border-radius:
+    999px;
 
-  color: var(--white);
+  background:
+    rgba(255,255,255,.12);
 
-  font-size: 22px;
+  color:
+    var(--white);
 
-  cursor: pointer;
+  font-size:
+    22px;
+
+  cursor:
+    pointer;
 }
 
 
-/* =========================================================
-   MOBILE NAVIGATION
-========================================================= */
-
 .mobile-nav {
-  display: none;
+  display:
+    none;
 
-  padding: 12px 0 16px;
+  padding:
+    12px 0 16px;
 
   border-top:
     1px solid rgba(255,255,255,.16);
@@ -561,109 +576,40 @@ section.block {
 
 
 .mobile-nav.open {
-  display: block;
+  display:
+    block;
 }
 
 
 .mobile-nav a {
-  display: block;
+  display:
+    block;
 
-  padding: 13px 14px;
+  padding:
+    13px 14px;
 
-  border-radius: 12px;
+  border-radius:
+    12px;
 
-  color: var(--white);
+  color:
+    var(--white);
 
   font-family:
     "Sarabun",
     Arial,
     sans-serif;
 
-  font-size: 16px;
+  font-size:
+    16px;
 
-  font-weight: 600;
+  font-weight:
+    600;
 
-  line-height: 1.3;
+  line-height:
+    1.3;
 }
 
 
-.mobile-nav a:hover {
-  background: rgba(255,255,255,.09);
-}
-
-
-/* =========================================================
-   HEADER RESPONSIVE
-========================================================= */
-
-@media (max-width: 1050px) {
-
-  .nav-links,
-  .nav-cta {
-    display: none;
-  }
-
-
-  .menu-btn {
-    display: inline-grid;
-
-    place-items: center;
-  }
-
-
-  .nav-inner {
-    min-height: 86px;
-  }
-
-
-  .brand-logo {
-    width: 105px;
-    height: 65px;
-  }
-
-}
-
-
-@media (max-width: 600px) {
-
-  .nav-inner {
-    min-height: 78px;
-  }
-
-
-  .brand-logo {
-    width: 92px;
-    height: 58px;
-
-    padding: 5px 8px;
-  }
-
-
-  .brand-name {
-    font-size: 19px;
-  }
-
-
-  .brand-tag {
-    font-size: 9px;
-
-    letter-spacing: .12em;
-  }
-
-
-  .menu-btn {
-    width: 44px;
-    height: 44px;
-
-    font-size: 20px;
-  }
-
-
-  .mobile-nav a {
-    font-size: 15px;
-  }
-
-}
 /* =========================================================
    06. HERO
 ========================================================= */
@@ -678,7 +624,7 @@ section.block {
 
 .hero-grid {
   min-height:
-    620px;
+    calc(100vh - 94px);
 
   display:
     grid;
@@ -694,7 +640,7 @@ section.block {
     30px;
 
   padding:
-    58px 0;
+    38px 0;
 }
 
 .hero-copy {
@@ -735,7 +681,7 @@ section.block {
     620px;
 
   margin:
-    22px 0 0;
+    20px 0 0;
 
   color:
     var(--slate);
@@ -744,7 +690,7 @@ section.block {
     19px;
 
   line-height:
-    1.8;
+    1.75;
 }
 
 .hero-actions {
@@ -758,7 +704,7 @@ section.block {
     12px;
 
   margin-top:
-    28px;
+    26px;
 }
 
 .btn {
@@ -845,7 +791,7 @@ section.block {
     center;
 
   transform:
-    scale(1.18);
+    scale(1.10);
 
   transform-origin:
     center;
@@ -930,6 +876,9 @@ section.block {
     var(--gold);
 }
 
+
+/* Larger central hub */
+
 .hub {
   fill:
     var(--offwhite);
@@ -941,10 +890,20 @@ section.block {
     6;
 }
 
+
 .hub-logo {
+  width:
+    160px;
+
+  height:
+    90px;
+
   pointer-events:
     none;
 }
+
+
+/* Animated travelling pulses */
 
 .route-pulse {
   offset-distance:
@@ -990,26 +949,47 @@ section.block {
 @keyframes routeTravel {
 
   0% {
-    offset-distance: 0%;
-    opacity: 1;
+    offset-distance:
+      0%;
+
+    opacity:
+      1;
   }
 
   27% {
-    offset-distance: 100%;
-    opacity: 1;
+    offset-distance:
+      100%;
+
+    opacity:
+      1;
   }
 
   33%,
   100% {
-    offset-distance: 100%;
-    opacity: 0;
+    offset-distance:
+      100%;
+
+    opacity:
+      0;
   }
+
 }
 
 
 /* =========================================================
    08. WHO WE ARE
 ========================================================= */
+
+#about,
+#what-we-do,
+#sponsors,
+#cros,
+#patients,
+#contact {
+  scroll-margin-top:
+    108px;
+}
+
 
 .who-grid {
   display:
@@ -1025,6 +1005,7 @@ section.block {
     stretch;
 }
 
+
 .mission-panel,
 .vision-panel {
   position:
@@ -1037,10 +1018,10 @@ section.block {
     column;
 
   min-height:
-    360px;
+    310px;
 
   padding:
-    34px;
+    28px;
 
   overflow:
     hidden;
@@ -1100,6 +1081,7 @@ section.block {
     none;
 }
 
+
 .mission-label {
   position:
     relative;
@@ -1138,6 +1120,7 @@ section.block {
     uppercase;
 }
 
+
 .mission-panel h3,
 .vision-panel h3 {
   position:
@@ -1147,13 +1130,13 @@ section.block {
     2;
 
   margin:
-    22px 0 14px;
+    20px 0 12px;
 
   color:
     var(--white);
 
   font-size:
-    clamp(27px,2.6vw,36px);
+    clamp(26px,2.5vw,35px);
 
   line-height:
     1.13;
@@ -1161,6 +1144,7 @@ section.block {
   letter-spacing:
     -.025em;
 }
+
 
 .mission-panel p,
 .vision-panel p {
@@ -1190,7 +1174,7 @@ section.block {
 
 .team-section {
   margin-top:
-    72px;
+    52px;
 }
 
 .team-heading {
@@ -1198,7 +1182,7 @@ section.block {
     760px;
 
   margin-bottom:
-    30px;
+    28px;
 }
 
 .team-heading h3 {
@@ -1228,7 +1212,7 @@ section.block {
 
 .team-group-title {
   margin:
-    34px 0 16px;
+    30px 0 14px;
 
   color:
     var(--green);
@@ -1375,9 +1359,21 @@ section.block {
    10. WHAT WE DO
 ========================================================= */
 
+#what-we-do {
+  min-height:
+    calc(100vh - 94px);
+
+  display:
+    flex;
+
+  align-items:
+    center;
+}
+
+
 .what-we-do {
   padding:
-    92px 0;
+    64px 0;
 
   background:
     var(--white);
@@ -1408,7 +1404,7 @@ section.block {
     0;
 
   min-height:
-    390px;
+    340px;
 
   overflow:
     hidden;
@@ -1484,7 +1480,7 @@ section.block {
     100%;
 
   min-height:
-    390px;
+    340px;
 
   display:
     flex;
@@ -1496,7 +1492,7 @@ section.block {
     flex-start;
 
   padding:
-    28px;
+    24px;
 
   border:
     0;
@@ -1516,15 +1512,10 @@ section.block {
 
 .what-number {
   margin-bottom:
-    22px;
+    20px;
 
   color:
     rgba(255,255,255,.72);
-
-  font-family:
-    "Sarabun",
-    Arial,
-    sans-serif;
 
   font-size:
     13px;
@@ -1547,7 +1538,7 @@ section.block {
     var(--white);
 
   font-size:
-    25px;
+    23px;
 
   line-height:
     1.12;
@@ -1561,13 +1552,13 @@ section.block {
     block;
 
   margin-top:
-    12px;
+    11px;
 
   color:
     rgba(255,255,255,.84);
 
   font-size:
-    15px;
+    14px;
 
   line-height:
     1.6;
@@ -1578,16 +1569,16 @@ section.block {
     absolute;
 
   top:
-    26px;
+    23px;
 
   right:
-    24px;
+    22px;
 
   width:
-    40px;
+    38px;
 
   height:
-    40px;
+    38px;
 
   display:
     grid;
@@ -1599,7 +1590,7 @@ section.block {
     1px solid rgba(255,255,255,.28);
 
   border-radius:
-    13px;
+    12px;
 
   background:
     rgba(255,255,255,.08);
@@ -1610,10 +1601,10 @@ section.block {
     relative;
 
   width:
-    16px;
+    15px;
 
   height:
-    16px;
+    15px;
 }
 
 .plus::before,
@@ -1631,7 +1622,7 @@ section.block {
     50%;
 
   width:
-    14px;
+    13px;
 
   height:
     2px;
@@ -1674,7 +1665,7 @@ section.block {
     flex-end;
 
   padding:
-    28px;
+    24px;
 
   background:
     inherit;
@@ -1686,12 +1677,14 @@ section.block {
     transform 280ms ease;
 }
 
-.what-card.is-open .what-card-content {
+.what-card.is-open
+.what-card-content {
   transform:
     translateY(0);
 }
 
-.what-card.is-open .what-card-trigger {
+.what-card.is-open
+.what-card-trigger {
   opacity:
     0;
 
@@ -1707,7 +1700,7 @@ section.block {
     rgba(255,255,255,.94);
 
   font-size:
-    17px;
+    16px;
 
   line-height:
     1.72;
@@ -1732,6 +1725,23 @@ section.block {
     stretch;
 }
 
+
+#sponsors,
+#cros,
+#patients {
+  min-height:
+    calc(100vh - 94px);
+
+  display:
+    flex;
+
+  align-items:
+    center;
+}
+
+
+/* White left panel */
+
 .card {
   border-radius:
     var(--radius-large);
@@ -1752,11 +1762,13 @@ section.block {
 
 .card-body {
   padding:
-    28px;
+    24px;
 }
 
 
-/* SMALL COLOURED PANELS */
+/* =========================================================
+   SMALL COLOURED SUBPANELS
+========================================================= */
 
 .africa-reasons {
   display:
@@ -1766,15 +1778,15 @@ section.block {
     repeat(2,minmax(0,1fr));
 
   gap:
-    12px;
+    10px;
 
   margin-top:
-    18px;
+    14px;
 }
 
 .africa-reason {
   min-height:
-    155px;
+    135px;
 
   display:
     flex;
@@ -1783,7 +1795,7 @@ section.block {
     column;
 
   padding:
-    18px;
+    15px 17px;
 
   border-radius:
     var(--radius-medium);
@@ -1793,7 +1805,7 @@ section.block {
 }
 
 
-/* diagonal pattern */
+/* Green / Gold / Gold / Green */
 
 .africa-reason:nth-child(1),
 .africa-reason:nth-child(4) {
@@ -1808,46 +1820,53 @@ section.block {
 }
 
 
-/* PICTOGRAM */
+/* =========================================================
+   SUBPANEL PICTOGRAMS
+   No box / no border / stronger stroke
+========================================================= */
 
 .subpanel-pictogram {
   width:
-    38px;
+    36px;
 
   height:
-    38px;
+    36px;
 
   display:
-    grid;
+    flex;
 
-  place-items:
+  align-items:
     center;
+
+  justify-content:
+    flex-start;
 
   flex:
     0 0 auto;
 
   margin-bottom:
-    13px;
+    10px;
 
   border:
-    1px solid rgba(255,255,255,.20);
+    none;
 
   border-radius:
-    11px;
+    0;
 
   background:
-    rgba(255,255,255,.10);
+    transparent;
 
   color:
     var(--white);
 }
 
+
 .subpanel-pictogram svg {
   width:
-    22px;
+    30px;
 
   height:
-    22px;
+    30px;
 
   fill:
     none;
@@ -1856,7 +1875,33 @@ section.block {
     currentColor;
 
   stroke-width:
-    1.8;
+    2.4;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+
+  overflow:
+    visible;
+}
+
+
+.subpanel-pictogram svg path,
+.subpanel-pictogram svg circle,
+.subpanel-pictogram svg rect,
+.subpanel-pictogram svg line,
+.subpanel-pictogram svg polyline,
+.subpanel-pictogram svg ellipse {
+  fill:
+    none;
+
+  stroke:
+    #ffffff;
+
+  stroke-width:
+    2.4;
 
   stroke-linecap:
     round;
@@ -1865,26 +1910,32 @@ section.block {
     round;
 }
 
+
+/* =========================================================
+   SUBPANEL TEXT
+========================================================= */
+
 .africa-reason strong {
   margin-bottom:
-    6px;
+    5px;
 
   color:
     var(--white);
 
   font-family:
     "Sarabun",
+    Helvetica,
     Arial,
     sans-serif;
 
   font-size:
-    17px;
+    16px;
 
   font-weight:
     700;
 
   line-height:
-    1.25;
+    1.22;
 }
 
 .africa-reason > span:not(.subpanel-pictogram) {
@@ -1892,14 +1943,16 @@ section.block {
     rgba(255,255,255,.90);
 
   font-size:
-    14px;
+    13.5px;
 
   line-height:
-    1.62;
+    1.5;
 }
 
 
-/* RIGHT VALUE PANEL */
+/* =========================================================
+   RIGHT BLUE PANELS
+========================================================= */
 
 .sponsor-value-card {
   position:
@@ -1924,13 +1977,54 @@ section.block {
     0 14px 38px rgba(6,25,53,.08);
 }
 
+
+/* Gold circular accent */
+
+.sponsor-value-card::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    250px;
+
+  height:
+    250px;
+
+  right:
+    -105px;
+
+  bottom:
+    -120px;
+
+  border:
+    1px solid rgba(200,157,60,.30);
+
+  border-radius:
+    50%;
+
+  box-shadow:
+    0 0 0 34px rgba(200,157,60,.05),
+    0 0 0 68px rgba(200,157,60,.025);
+
+  pointer-events:
+    none;
+}
+
+
 .sponsor-value-card .card-body {
   position:
     relative;
 
   z-index:
     2;
+
+  padding:
+    24px;
 }
+
 
 .sponsor-value-card h3 {
   margin:
@@ -1939,9 +2033,19 @@ section.block {
   color:
     var(--white);
 
+  font-family:
+    "Sarabun",
+    Helvetica,
+    Arial,
+    sans-serif;
+
   font-size:
     30px;
+
+  line-height:
+    1.15;
 }
+
 
 .sponsor-copy {
   margin:
@@ -1951,21 +2055,26 @@ section.block {
     rgba(255,255,255,.86);
 
   font-size:
-    17px;
+    16px;
 
   line-height:
-    1.78;
+    1.65;
 }
+
+
+/* =========================================================
+   VALUE LIST
+========================================================= */
 
 .feature-list {
   display:
     grid;
 
   gap:
-    10px;
+    8px;
 
   margin:
-    18px 0 0;
+    15px 0 0;
 
   padding:
     0;
@@ -1985,7 +2094,7 @@ section.block {
     10px;
 
   padding:
-    12px 14px;
+    10px 13px;
 
   border:
     1px solid rgba(255,255,255,.10);
@@ -2000,13 +2109,16 @@ section.block {
     rgba(255,255,255,.94);
 
   font-size:
-    15px;
+    14px;
 
   line-height:
-    1.55;
+    1.45;
 }
 
 .check {
+  flex:
+    0 0 auto;
+
   color:
     var(--gold);
 
@@ -2121,7 +2233,41 @@ textarea {
 
 
 /* =========================================================
-   13. FOOTER
+   13. PATIENT DISCLAIMER
+========================================================= */
+
+.patient-disclaimer {
+  position:
+    relative;
+
+  z-index:
+    2;
+
+  margin:
+    24px 0 0;
+
+  padding:
+    16px 18px;
+
+  border-left:
+    3px solid var(--gold);
+
+  background:
+    rgba(255,255,255,.06);
+
+  color:
+    rgba(255,255,255,.76);
+
+  font-size:
+    13px;
+
+  line-height:
+    1.65;
+}
+
+
+/* =========================================================
+   14. FOOTER
 ========================================================= */
 
 .footer {
@@ -2168,482 +2314,211 @@ textarea {
 
 
 /* =========================================================
-   14. RESPONSIVE
-========================================================= */
-
-@media (max-width: 1050px) {
-
-  .container {
-    width:
-      min(100% - 64px,1080px);
-  }
-
-  .nav-links,
-  .nav-cta {
-    display:
-      none;
-  }
-
-  .menu-btn {
-    display:
-      inline-grid;
-
-    place-items:
-      center;
-  }
-
-  .hero-grid {
-    grid-template-columns:
-      1fr;
-
-    min-height:
-      auto;
-  }
-
-  .hero-network {
-    transform:
-      none;
-  }
-
-  .who-grid,
-  .grid-2 {
-    grid-template-columns:
-      1fr;
-  }
-
-  .what-grid {
-    grid-template-columns:
-      repeat(2,minmax(0,1fr));
-  }
-
-}
-
-
-@media (max-width: 760px) {
-
-  .container {
-    width:
-      min(100% - 32px,1080px);
-  }
-
-  section.block,
-  .what-we-do {
-    padding:
-      64px 0;
-  }
-
-  .what-grid,
-  .africa-reasons,
-  .team-grid,
-  .form-row {
-    grid-template-columns:
-      1fr;
-  }
-
-  .mission-panel,
-  .vision-panel {
-    min-height:
-      auto;
-
-    padding:
-      28px;
-  }
-
-}
-
-
-@media (prefers-reduced-motion: reduce) {
-
-  html {
-    scroll-behavior:
-      auto;
-  }
-
-  .route-pulse {
-    animation:
-      none !important;
-
-    opacity:
-      0 !important;
-  }
-
-}
-
-
-/* =========================================================
-  15. PATIENT INFORMATION DISCLAIMER
-========================================================= */
-
-.patient-disclaimer {
-  position: relative;
-  z-index: 2;
-
-  margin: 24px 0 0;
-  padding: 16px 18px;
-
-  border-left: 3px solid var(--gold);
-
-  background: rgba(255,255,255,.06);
-
-  color: rgba(255,255,255,.76);
-
-  font-size: 13px;
-  line-height: 1.65;
-}
-
-/* =========================================================
-   16. SECTION VIEWPORT / SCROLL BEHAVIOUR
-========================================================= */
-
-/*
-   Sticky header is ~94px high.
-
-   This ensures clicking:
-   Who We Are
-   What We Do
-   For Sponsors
-   For CROs
-   For Patients
-   Contact
-
-   positions the section BELOW the header instead of
-   hiding its heading behind it.
-*/
-
-#about,
-#what-we-do,
-#sponsors,
-#cros,
-#patients,
-#contact {
-  scroll-margin-top: 108px;
-}
-
-
-/*
-   Slightly reduce vertical padding so the heading +
-   primary content are visible together on normal
-   laptop screens.
-*/
-
-section.block {
-  padding: 64px 0;
-}
-
-.what-we-do {
-  padding: 64px 0;
-}
-
-
-/* Tighter heading spacing */
-
-.section-head {
-  margin-bottom: 26px;
-}
-
-.section-head p {
-  margin-top: 12px;
-}
-
-
-/* =========================================================
-   SPONSOR / CRO / PATIENT SECTION HEIGHT
-========================================================= */
-
-/*
-   These three sections are compact enough that we can
-   aim to keep the entire main section visible on a
-   standard desktop/laptop viewport.
-*/
-
-#sponsors,
-#cros,
-#patients {
-  min-height: calc(100vh - 94px);
-
-  display: flex;
-  align-items: center;
-}
-
-
-/*
-   Prevent unnecessary vertical growth of the main panels.
-*/
-
-#sponsors .card-body,
-#cros .card-body,
-#patients .card-body,
-#sponsors .sponsor-value-card .card-body,
-#cros .sponsor-value-card .card-body,
-#patients .sponsor-value-card .card-body {
-  padding: 24px;
-}
-
-
-/*
-   Slightly more compact coloured cards.
-*/
-
-#sponsors .africa-reason,
-#cros .africa-reason,
-#patients .africa-reason {
-  min-height: 135px;
-
-  padding: 15px 17px;
-}
-
-
-#sponsors .africa-reasons,
-#cros .africa-reasons,
-#patients .africa-reasons {
-  gap: 10px;
-
-  margin-top: 14px;
-}
-
-
-/* =========================================================
-   WHAT WE DO — FIT BETTER ON SCREEN
-========================================================= */
-
-#what-we-do {
-  min-height: calc(100vh - 94px);
-
-  display: flex;
-  align-items: center;
-}
-
-
-#what-we-do .what-card,
-#what-we-do .what-card-trigger {
-  min-height: 340px;
-}
-
-
-#what-we-do .what-card-trigger,
-#what-we-do .what-card-content {
-  padding: 24px;
-}
-
-
-#what-we-do .what-title {
-  font-size: 23px;
-}
-
-
-#what-we-do .what-short {
-  font-size: 14px;
-}
-
-
-/* =========================================================
-   WHO WE ARE
-========================================================= */
-
-/*
-   Who We Are includes Mission, Vision AND the full team,
-   so forcing the entire section into one viewport would
-   make everything too small.
-
-   Instead, the section lands correctly below the header
-   and Mission/Vision remain compact.
-*/
-
-#about .mission-panel,
-#about .vision-panel {
-  min-height: 310px;
-
-  padding: 28px;
-}
-
-
-#about .team-section {
-  margin-top: 52px;
-}
-
-
-/* =========================================================
-   MOBILE / TABLET
-========================================================= */
-
-@media (max-width: 1050px) {
-
-  #about,
-  #what-we-do,
-  #sponsors,
-  #cros,
-  #patients,
-  #contact {
-    scroll-margin-top: 96px;
-  }
-
-
-  /*
-     Do not force viewport heights on tablets.
-  */
-
-  #what-we-do,
-  #sponsors,
-  #cros,
-  #patients {
-    min-height: auto;
-
-    display: block;
-  }
-
-}
-
-
-@media (max-width: 760px) {
-
-  section.block,
-  .what-we-do {
-    padding: 54px 0;
-  }
-
-
-  #about,
-  #what-we-do,
-  #sponsors,
-  #cros,
-  #patients,
-  #contact {
-    scroll-margin-top: 86px;
-  }
-
-}
-/* =========================================================
-   17. TEAM PAGE
+   15. TEAM PAGE
 ========================================================= */
 
 .team-page {
-  min-height: 100vh;
-  padding: 75px 0 110px;
-  background: #ffffff;
+  min-height:
+    100vh;
+
+  padding:
+    75px 0 110px;
+
+  background:
+    var(--white);
 }
 
 .team-back {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display:
+    inline-flex;
 
-  margin-bottom: 48px;
+  align-items:
+    center;
 
-  color: var(--green);
+  gap:
+    8px;
 
-  font-family: "Sarabun", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
+  margin-bottom:
+    48px;
+
+  color:
+    var(--green);
+
+  font-family:
+    "Sarabun",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size:
+    14px;
+
+  font-weight:
+    700;
 }
 
 .team-back:hover {
-  color: var(--gold);
+  color:
+    var(--gold);
 }
 
-
-/* TEAM PAGE HEADER */
-
 .team-page-header {
-  max-width: 780px;
-  margin-bottom: 65px;
+  max-width:
+    780px;
+
+  margin-bottom:
+    65px;
 }
 
 .team-page-header h1 {
-  position: relative;
-  display: inline-block;
+  position:
+    relative;
 
-  margin: 0;
-  padding-bottom: 20px;
+  display:
+    inline-block;
 
-  color: var(--blue);
+  margin:
+    0;
 
-  font-family: "Sarabun", Helvetica, Arial, sans-serif;
+  padding-bottom:
+    20px;
 
-  font-size: clamp(48px, 6.5vw, 76px);
-  line-height: 1.04;
-  letter-spacing: -.04em;
+  color:
+    var(--blue);
+
+  font-family:
+    "Sarabun",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size:
+    clamp(48px,6.5vw,76px);
+
+  line-height:
+    1.04;
+
+  letter-spacing:
+    -.04em;
 }
 
 .team-page-header h1::after {
-  content: "";
+  content:
+    "";
 
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  position:
+    absolute;
 
-  width: 92px;
-  height: 4px;
+  left:
+    0;
 
-  border-radius: 999px;
+  bottom:
+    0;
 
-  background: var(--gold);
+  width:
+    92px;
+
+  height:
+    4px;
+
+  border-radius:
+    999px;
+
+  background:
+    var(--gold);
 }
 
 .team-page-header p {
-  margin: 20px 0 0;
+  margin:
+    20px 0 0;
 
-  color: var(--slate);
+  color:
+    var(--slate);
 
-  font-size: 20px;
-  line-height: 1.8;
+  font-size:
+    20px;
+
+  line-height:
+    1.8;
 }
 
-
-/* FOUNDERS / ADVISORS */
-
 .team-list-section {
-  margin-top: 60px;
-  scroll-margin-top: 120px;
+  margin-top:
+    60px;
+
+  scroll-margin-top:
+    120px;
 }
 
 .team-list-heading {
-  margin: 0 0 24px;
+  margin:
+    0 0 24px;
 
-  color: var(--gold);
+  color:
+    var(--gold);
 
-  font-family: "Sarabun", Helvetica, Arial, sans-serif;
+  font-family:
+    "Sarabun",
+    Helvetica,
+    Arial,
+    sans-serif;
 
-  font-size: clamp(34px, 3.5vw, 44px);
-  font-weight: 700;
-  line-height: 1.15;
+  font-size:
+    clamp(34px,3.5vw,44px);
+
+  font-weight:
+    700;
+
+  line-height:
+    1.15;
 }
 
-
-/* ACCORDION */
-
 .team-accordion {
-  border-top: 1px solid var(--line);
+  border-top:
+    1px solid var(--line);
 }
 
 .team-member {
-  border-bottom: 1px solid var(--line);
-  scroll-margin-top: 120px;
+  border-bottom:
+    1px solid var(--line);
+
+  scroll-margin-top:
+    120px;
 }
 
-
-/* MEMBER ROW */
-
 .team-member-button {
-  width: 100%;
+  width:
+    100%;
 
-  display: grid;
-  grid-template-columns: 140px 1fr auto;
+  display:
+    grid;
 
-  align-items: center;
+  grid-template-columns:
+    140px 1fr auto;
 
-  gap: 32px;
+  align-items:
+    center;
 
-  min-height: 175px;
+  gap:
+    32px;
 
-  padding: 22px 8px;
+  min-height:
+    175px;
 
-  border: 0;
+  padding:
+    22px 8px;
 
-  background: transparent;
+  border:
+    0;
 
-  text-align: left;
+  background:
+    transparent;
 
-  cursor: pointer;
+  text-align:
+    left;
+
+  cursor:
+    pointer;
 
   transition:
     background 180ms ease,
@@ -2651,110 +2526,149 @@ section.block {
 }
 
 .team-member-button:hover {
-  padding-left: 15px;
+  padding-left:
+    15px;
 
-  background: var(--offwhite);
+  background:
+    var(--offwhite);
 }
 
-
-/* LARGE TEAM PHOTOS */
-
 .team-member-photo {
-  width: 128px;
-  height: 128px;
+  width:
+    128px;
 
-  overflow: hidden;
+  height:
+    128px;
 
-  border: 2px solid rgba(200,157,60,.38);
+  overflow:
+    hidden;
 
-  border-radius: 50%;
+  border:
+    2px solid rgba(200,157,60,.38);
 
-  background: var(--offwhite);
+  border-radius:
+    50%;
+
+  background:
+    var(--offwhite);
 }
 
 .team-member-photo img {
-  width: 100%;
-  height: 100%;
+  width:
+    100%;
 
-  display: block;
+  height:
+    100%;
 
-  object-fit: cover;
+  display:
+    block;
+
+  object-fit:
+    cover;
 }
 
-
-/* ROLE + NAME */
-
 .team-member-role {
-  margin-bottom: 7px;
+  margin-bottom:
+    7px;
 
-  color: var(--green);
+  color:
+    var(--green);
 
-  font-family: "Sarabun", Helvetica, Arial, sans-serif;
+  font-size:
+    13px;
 
-  font-size: 13px;
-  font-weight: 700;
+  font-weight:
+    700;
 
-  letter-spacing: .14em;
+  letter-spacing:
+    .14em;
 
-  text-transform: uppercase;
+  text-transform:
+    uppercase;
 }
 
 .team-member-name {
-  color: var(--blue);
+  color:
+    var(--blue);
 
-  font-family: "Sarabun", Helvetica, Arial, sans-serif;
+  font-size:
+    31px;
 
-  font-size: 31px;
-  font-weight: 700;
+  font-weight:
+    700;
 
-  line-height: 1.15;
+  line-height:
+    1.15;
 }
 
-
-/* PLUS / MINUS */
-
 .team-member-toggle {
-  position: relative;
+  position:
+    relative;
 
-  width: 48px;
-  height: 48px;
+  width:
+    48px;
 
-  display: grid;
-  place-items: center;
+  height:
+    48px;
 
-  border: 1px solid rgba(200,157,60,.45);
+  display:
+    grid;
 
-  border-radius: 13px;
+  place-items:
+    center;
 
-  color: var(--gold);
+  border:
+    1px solid rgba(200,157,60,.45);
+
+  border-radius:
+    13px;
+
+  color:
+    var(--gold);
 }
 
 .team-member-plus {
-  position: relative;
+  position:
+    relative;
 
-  width: 16px;
-  height: 16px;
+  width:
+    16px;
+
+  height:
+    16px;
 }
 
 .team-member-plus::before,
 .team-member-plus::after {
-  content: "";
+  content:
+    "";
 
-  position: absolute;
+  position:
+    absolute;
 
-  left: 50%;
-  top: 50%;
+  left:
+    50%;
 
-  width: 15px;
-  height: 2px;
+  top:
+    50%;
 
-  border-radius: 999px;
+  width:
+    15px;
 
-  background: currentColor;
+  height:
+    2px;
 
-  transform: translate(-50%,-50%);
+  border-radius:
+    999px;
 
-  transition: transform 180ms ease;
+  background:
+    currentColor;
+
+  transform:
+    translate(-50%,-50%);
+
+  transition:
+    transform 180ms ease;
 }
 
 .team-member-plus::after {
@@ -2766,17 +2680,15 @@ section.block {
 .team-member.is-open
 .team-member-plus::after {
   transform:
-    translate(-50%,-50%)
-    rotate(0deg);
+    translate(-50%,-50%);
 }
 
-
-/* BIO DROPDOWN */
-
 .team-member-bio {
-  display: grid;
+  display:
+    grid;
 
-  grid-template-rows: 0fr;
+  grid-template-rows:
+    0fr;
 
   transition:
     grid-template-rows 280ms ease;
@@ -2784,124 +2696,436 @@ section.block {
 
 .team-member.is-open
 .team-member-bio {
-  grid-template-rows: 1fr;
+  grid-template-rows:
+    1fr;
 }
 
 .team-member-bio-inner {
-  overflow: hidden;
+  overflow:
+    hidden;
 }
 
 .team-member-bio-content {
-  max-width: 850px;
+  max-width:
+    850px;
 
-  margin-left: 172px;
+  margin-left:
+    172px;
 
-  padding: 2px 25px 38px 0;
+  padding:
+    2px 25px 38px 0;
 }
 
 .team-member-bio-content p {
-  margin: 0;
+  margin:
+    0;
 
-  color: var(--slate);
+  color:
+    var(--slate);
 
-  font-size: 18px;
-  line-height: 1.82;
+  font-size:
+    18px;
+
+  line-height:
+    1.82;
 }
 
-
-/* EXPERTISE TAGS */
-
 .team-member-expertise {
-  display: flex;
-  flex-wrap: wrap;
+  display:
+    flex;
 
-  gap: 8px;
+  flex-wrap:
+    wrap;
 
-  margin-top: 18px;
+  gap:
+    8px;
+
+  margin-top:
+    18px;
 }
 
 .team-member-expertise span {
-  display: inline-flex;
+  display:
+    inline-flex;
 
-  padding: 7px 11px;
+  padding:
+    7px 11px;
 
-  border: 1px solid rgba(200,157,60,.32);
+  border:
+    1px solid rgba(200,157,60,.32);
 
-  border-radius: 999px;
+  border-radius:
+    999px;
 
-  color: var(--green);
+  color:
+    var(--green);
 
-  font-family: "Sarabun", Helvetica, Arial, sans-serif;
+  font-family:
+    "Sarabun",
+    Helvetica,
+    Arial,
+    sans-serif;
 
-  font-size: 12px;
-  font-weight: 600;
+  font-size:
+    12px;
+
+  font-weight:
+    600;
 }
-
-
-/* OPEN STATE */
 
 .team-member.is-open
 .team-member-button {
-  background: rgba(248,248,246,.65);
+  background:
+    rgba(248,248,246,.65);
 }
 
 .team-member.is-open
 .team-member-name {
-  color: var(--green);
+  color:
+    var(--green);
 }
 
 
-/* TEAM PAGE MOBILE */
+/* =========================================================
+   16. DESKTOP / TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .container {
+    width:
+      min(100% - 64px,1080px);
+  }
+
+
+  .nav-links,
+  .nav-cta {
+    display:
+      none;
+  }
+
+
+  .menu-btn {
+    display:
+      inline-grid;
+
+    place-items:
+      center;
+  }
+
+
+  .nav-inner {
+    min-height:
+      86px;
+  }
+
+
+  .brand-logo,
+  .brand-logo img {
+    height:
+      76px;
+  }
+
+
+  .brand-logo img {
+    max-width:
+      175px;
+  }
+
+
+  .hero-grid {
+    grid-template-columns:
+      1fr;
+
+    min-height:
+      auto;
+
+    padding:
+      48px 0 54px;
+  }
+
+
+  .hero-network {
+    transform:
+      none;
+  }
+
+
+  .who-grid,
+  .grid-2 {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .what-grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+
+  #what-we-do,
+  #sponsors,
+  #cros,
+  #patients {
+    min-height:
+      auto;
+
+    display:
+      block;
+  }
+
+
+  #about,
+  #what-we-do,
+  #sponsors,
+  #cros,
+  #patients,
+  #contact {
+    scroll-margin-top:
+      96px;
+  }
+
+}
+
+
+/* =========================================================
+   17. MOBILE
+========================================================= */
 
 @media (max-width: 760px) {
 
-  .team-page {
-    padding: 55px 0 80px;
+  .container {
+    width:
+      min(100% - 32px,1080px);
   }
 
-  .team-page-header h1 {
-    font-size: 48px;
+
+  section.block,
+  .what-we-do {
+    padding:
+      54px 0;
   }
 
-  .team-page-header p {
-    font-size: 17px;
+
+  .hero-grid {
+    padding:
+      42px 0 36px;
   }
 
-  .team-list-heading {
-    font-size: 32px;
+
+  .hero h1 {
+    font-size:
+      clamp(40px,12vw,55px);
   }
+
+
+  .lead {
+    font-size:
+      17px;
+  }
+
+
+  .what-grid,
+  .africa-reasons,
+  .team-grid,
+  .form-row {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .what-card,
+  .what-card-trigger {
+    min-height:
+      300px;
+  }
+
+
+  .what-card-trigger,
+  .what-card-content {
+    padding:
+      22px;
+  }
+
+
+  .what-title {
+    font-size:
+      22px;
+  }
+
+
+  .sponsor-copy {
+    font-size:
+      16px;
+  }
+
+
+  .feature-list li {
+    font-size:
+      14px;
+  }
+
+
+  .mission-panel,
+  .vision-panel {
+    min-height:
+      auto;
+
+    padding:
+      28px;
+  }
+
+
+  .team-section {
+    margin-top:
+      50px;
+  }
+
 
   .team-member-button {
-    grid-template-columns: 88px 1fr 40px;
+    grid-template-columns:
+      88px 1fr 40px;
 
-    gap: 18px;
+    gap:
+      18px;
 
-    min-height: 125px;
+    min-height:
+      125px;
 
-    padding: 17px 3px;
+    padding:
+      17px 3px;
   }
+
 
   .team-member-photo {
-    width: 82px;
-    height: 82px;
+    width:
+      82px;
+
+    height:
+      82px;
   }
+
 
   .team-member-name {
-    font-size: 23px;
+    font-size:
+      23px;
   }
+
 
   .team-member-role {
-    font-size: 11px;
+    font-size:
+      11px;
   }
+
 
   .team-member-bio-content {
-    margin-left: 0;
+    margin-left:
+      0;
 
-    padding: 8px 8px 30px;
+    padding:
+      8px 8px 30px;
   }
 
+
   .team-member-bio-content p {
-    font-size: 16px;
+    font-size:
+      16px;
+  }
+
+
+  .team-page {
+    padding:
+      55px 0 80px;
+  }
+
+
+  .team-page-header h1 {
+    font-size:
+      48px;
+  }
+
+
+  .team-page-header p {
+    font-size:
+      17px;
+  }
+
+
+  .team-list-heading {
+    font-size:
+      32px;
+  }
+
+
+  #about,
+  #what-we-do,
+  #sponsors,
+  #cros,
+  #patients,
+  #contact {
+    scroll-margin-top:
+      86px;
+  }
+
+
+  .brand-logo {
+    height:
+      70px;
+
+    width:
+      auto;
+  }
+
+
+  .brand-logo img {
+    height:
+      70px;
+
+    max-width:
+      160px;
+  }
+
+
+  .menu-btn {
+    width:
+      44px;
+
+    height:
+      44px;
+
+    font-size:
+      20px;
+  }
+
+}
+
+
+/* =========================================================
+   18. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior:
+      auto;
+  }
+
+
+  .route-pulse {
+    animation:
+      none !important;
+
+    opacity:
+      0 !important;
+  }
+
+
+  .what-card-content,
+  .team-member-bio {
+    transition:
+      none !important;
   }
 
 }
