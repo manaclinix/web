@@ -2269,8 +2269,29 @@ textarea {
 
 }
 
+
 /* =========================================================
-   15. TEAM PAGE
+  15. PATIENT INFORMATION DISCLAIMER
+========================================================= */
+
+.patient-disclaimer {
+  position: relative;
+  z-index: 2;
+
+  margin: 24px 0 0;
+  padding: 16px 18px;
+
+  border-left: 3px solid var(--gold);
+
+  background: rgba(255,255,255,.06);
+
+  color: rgba(255,255,255,.76);
+
+  font-size: 13px;
+  line-height: 1.65;
+}
+/* =========================================================
+   16. TEAM PAGE
 ========================================================= */
 
 .team-page {
