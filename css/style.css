@@ -297,58 +297,76 @@ section.block {
 
 
 /* =========================================================
-   LOGO
+   HEADER LOGO — IMAGE ONLY
    No white background
 ========================================================= */
 
 .brand {
-  display:
-    flex;
-
-  align-items:
-    center;
-
-  flex-shrink:
-    0;
-
-  color:
-    var(--white);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
-
 
 .brand-logo {
-  height:
-    85px;
+  height: 85px;
+  width: auto;
 
-  width:
-    auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
-  display:
-    flex;
-
-  align-items:
-    center;
+  /* REMOVE ALL BACKGROUND STYLING */
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  overflow: visible;
 }
-
 
 .brand-logo img {
-  width:
-    auto;
+  display: block;
 
-  height:
-    85px;
+  width: auto;
+  height: 85px;
+  max-width: 200px;
 
-  max-width:
-    190px;
+  object-fit: contain;
 
-  display:
-    block;
-
-  object-fit:
-    contain;
+  background: transparent !important;
 }
 
 
+/* TABLET */
+
+@media (max-width: 1050px) {
+
+  .brand-logo,
+  .brand-logo img {
+    height: 76px;
+  }
+
+  .brand-logo img {
+    max-width: 180px;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  .brand-logo,
+  .brand-logo img {
+    height: 68px;
+  }
+
+  .brand-logo img {
+    max-width: 160px;
+  }
+
+}
 /* =========================================================
    DESKTOP NAVIGATION
 ========================================================= */
