@@ -313,7 +313,7 @@ ${message}`
       */
 
       window.location.href =
-        "mailto:hello@manaclinix.com" +
+        "mailto:contact@manaclinix.com" +
         "?subject=" +
         subject +
         "&body=" +
