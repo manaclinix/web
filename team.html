@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Our Team | ManaClinix</title>
+
+  <meta
+    name="description"
+    content="Meet the founders and advisors behind ManaClinix."
+  >
+
+
+  <!-- SARABUN -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <!-- MAIN WEBSITE CSS -->
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+
+  <!-- TEAM PAGE STYLES -->
+
+  <style>
+
+    /* =========================================================
+       TEAM PAGE
+    ========================================================= */
+
+    .team-page {
+      min-height: 100vh;
+      padding: 80px 0 110px;
+      background: #ffffff;
+    }
+
+
+    /* Back link */
+
+    .team-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      margin-bottom: 52px;
+
+      color: #255a42;
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      text-decoration: none;
+    }
+
+    .team-back:hover {
+      color: #c89d3c;
+    }
+
+
+    /* =========================================================
+       PAGE HEADER
+    ========================================================= */
+
+    .team-page-header {
+      max-width: 760px;
+      margin-bottom: 70px;
+    }
+
+    .team-page-header .eyebrow {
+      margin-bottom: 14px;
+    }
+
+    .team-page-header h1 {
+      position: relative;
+
+      display: inline-block;
+
+      margin: 0;
+      padding-bottom: 20px;
+
+      color: #061935;
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size:
+        clamp(42px, 6vw, 68px);
+
+      line-height: 1.04;
+
+      letter-spacing: -.04em;
+    }
+
+    .team-page-header h1::after {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      bottom: 0;
+
+      width: 92px;
+      height: 4px;
+
+      border-radius: 999px;
+
+      background: #c89d3c;
+    }
+
+    .team-page-header p {
+      margin: 20px 0 0;
+
+      color: #46515c;
+
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+
+    /* =========================================================
+       TEAM GROUP
+    ========================================================= */
+
+    .team-list-section {
+      margin-top: 65px;
+    }
+
+    .team-list-heading {
+      margin: 0 0 24px;
+
+      color: #c89d3c;
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size:
+        clamp(28px, 3vw, 38px);
+
+      font-weight: 700;
+
+      line-height: 1.15;
+    }
+
+
+    /* =========================================================
+       TEAM LIST
+    ========================================================= */
+
+    .team-list {
+      margin: 0;
+      padding: 0;
+
+      list-style: none;
+
+      border-top:
+        1px solid rgba(6,25,53,.12);
+    }
+
+
+    .team-list-item {
+      border-bottom:
+        1px solid rgba(6,25,53,.12);
+    }
+
+
+    .team-list-link {
+      display: grid;
+
+      grid-template-columns:
+        92px 1fr auto;
+
+      align-items: center;
+
+      gap: 26px;
+
+      min-height: 125px;
+
+      padding: 18px 4px;
+
+      text-decoration: none;
+
+      transition:
+        padding-left 180ms ease,
+        background 180ms ease;
+    }
+
+
+    .team-list-link:hover {
+      padding-left: 12px;
+
+      background:
+        rgba(248,248,246,.75);
+    }
+
+
+    /* Photo */
+
+    .team-list-photo {
+      width: 82px;
+      height: 82px;
+
+      overflow: hidden;
+
+      border-radius: 50%;
+
+      background: #f8f8f6;
+
+      border:
+        1px solid rgba(200,157,60,.35);
+    }
+
+    .team-list-photo img {
+      width: 100%;
+      height: 100%;
+
+      display: block;
+
+      object-fit: cover;
+    }
+
+
+    /* Name / role */
+
+    .team-list-role {
+      margin-bottom: 4px;
+
+      color: #255a42;
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 11px;
+      font-weight: 700;
+
+      letter-spacing: .14em;
+
+      text-transform: uppercase;
+    }
+
+
+    .team-list-name {
+      color: #061935;
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 25px;
+      font-weight: 700;
+
+      line-height: 1.2;
+    }
+
+
+    /* Arrow */
+
+    .team-list-arrow {
+      color: #c89d3c;
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 24px;
+
+      transition:
+        transform 180ms ease;
+    }
+
+    .team-list-link:hover
+    .team-list-arrow {
+      transform: translateX(5px);
+    }
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 760px) {
+
+      .team-page {
+        padding: 55px 0 80px;
+      }
+
+      .team-page-header {
+        margin-bottom: 50px;
+      }
+
+      .team-list-section {
+        margin-top: 50px;
+      }
+
+      .team-list-link {
+        grid-template-columns:
+          68px 1fr auto;
+
+        gap: 17px;
+
+        min-height: 105px;
+      }
+
+      .team-list-photo {
+        width: 62px;
+        height: 62px;
+      }
+
+      .team-list-name {
+        font-size: 20px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================================================
+       HEADER
+       Same header structure as index.html
+  ========================================================= -->
+
+  <header
+    class="header"
+    id="header"
+  >
+
+    <div class="container">
+
+      <div class="nav-inner">
+
+
+        <!-- LOGO -->
+
+        <a
+          href="index.html"
+          class="brand"
+          aria-label="ManaClinix home"
+        >
+
+          <div class="brand-logo">
+
+            <img
+              src="images/ManaClinix_Logo_web.png"
+              alt="ManaClinix"
+            >
+
+          </div>
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav
+          class="nav-links"
+          aria-label="Primary navigation"
+        >
+
+          <a
+            href="index.html"
+            class="home-nav"
+            aria-label="Home"
+          >
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+
+              <path
+                d="M12 3.2 2.8 11h2.4v9h5.2v-5.6h3.2V20h5.2v-9h2.4L12 3.2z"
+              />
+
+            </svg>
+
+          </a>
+
+
+          <a href="index.html#about">
+            Who We Are
+          </a>
+
+
+          <a href="index.html#what-we-do">
+            What We Do
+          </a>
+
+
+          <a href="index.html#sponsors">
+            For Sponsors
+          </a>
+
+
+          <a href="index.html#cros">
+            For CROs
+          </a>
+
+
+          <a href="index.html#patients">
+            For Patients
+          </a>
+
+        </nav>
+
+
+        <a
+          href="index.html#contact"
+          class="nav-cta"
+        >
+          Contact us
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================================================
+       TEAM
+  ========================================================= -->
+
+  <main>
+
+    <section class="team-page">
+
+      <div class="container">
+
+
+        <!-- BACK -->
+
+        <a
+          href="index.html#about"
+          class="team-back"
+        >
+          ← Back to Who We Are
+        </a>
+
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="team-page-header">
+
+          <p class="eyebrow">
+            Who we are
+          </p>
+
+
+          <h1>
+            Our Team
+          </h1>
+
+
+          <p>
+
+            Meet the founders and advisors bringing together
+            clinical research expertise, regional knowledge and
+            strategic leadership at ManaClinix.
+
+          </p>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             FOUNDERS
+        ====================================================== -->
+
+        <section class="team-list-section">
+
+
+          <h2 class="team-list-heading">
+            Founders
+          </h2>
+
+
+          <ul class="team-list">
+
+
+            <!-- FOUNDER A -->
+
+            <li class="team-list-item">
+
+              <a
+                href="profile.html?member=founder-a"
+                class="team-list-link"
+              >
+
+                <div class="team-list-photo">
+
+                  <img
+                    src="images/founder-a.jpg"
+                    alt="Founder A"
+                  >
+
+                </div>
+
+
+                <div>
+
+                  <div class="team-list-role">
+                    Founder
+                  </div>
+
+                  <div class="team-list-name">
+                    Founder A
+                  </div>
+
+                </div>
+
+
+                <div class="team-list-arrow">
+                  →
+                </div>
+
+              </a>
+
+            </li>
+
+
+
+            <!-- FOUNDER B -->
+
+            <li class="team-list-item">
+
+              <a
+                href="profile.html?member=founder-b"
+                class="team-list-link"
+              >
+
+                <div class="team-list-photo">
+
+                  <img
+                    src="images/founder-b.jpg"
+                    alt="Founder B"
+                  >
+
+                </div>
+
+
+                <div>
+
+                  <div class="team-list-role">
+                    Founder
+                  </div>
+
+                  <div class="team-list-name">
+                    Founder B
+                  </div>
+
+                </div>
+
+
+                <div class="team-list-arrow">
+                  →
+                </div>
+
+              </a>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ADVISORS
+        ====================================================== -->
+
+        <section class="team-list-section">
+
+
+          <h2 class="team-list-heading">
+            Advisors
+          </h2>
+
+
+          <ul class="team-list">
+
+
+            <!-- ADVISOR A -->
+
+            <li class="team-list-item">
+
+              <a
+                href="profile.html?member=advisor-a"
+                class="team-list-link"
+              >
+
+                <div class="team-list-photo">
+
+                  <img
+                    src="images/advisor-a.jpg"
+                    alt="Advisor A"
+                  >
+
+                </div>
+
+
+                <div>
+
+                  <div class="team-list-role">
+                    Advisor
+                  </div>
+
+                  <div class="team-list-name">
+                    Advisor A
+                  </div>
+
+                </div>
+
+
+                <div class="team-list-arrow">
+                  →
+                </div>
+
+              </a>
+
+            </li>
+
+
+
+            <!-- ADVISOR B -->
+
+            <li class="team-list-item">
+
+              <a
+                href="profile.html?member=advisor-b"
+                class="team-list-link"
+              >
+
+                <div class="team-list-photo">
+
+                  <img
+                    src="images/advisor-b.jpg"
+                    alt="Advisor B"
+                  >
+
+                </div>
+
+
+                <div>
+
+                  <div class="team-list-role">
+                    Advisor
+                  </div>
+
+                  <div class="team-list-name">
+                    Advisor B
+                  </div>
+
+                </div>
+
+
+                <div class="team-list-arrow">
+                  →
+                </div>
+
+              </a>
+
+            </li>
+
+
+
+            <!-- ADVISOR C -->
+
+            <li class="team-list-item">
+
+              <a
+                href="profile.html?member=advisor-c"
+                class="team-list-link"
+              >
+
+                <div class="team-list-photo">
+
+                  <img
+                    src="images/advisor-c.jpg"
+                    alt="Advisor C"
+                  >
+
+                </div>
+
+
+                <div>
+
+                  <div class="team-list-role">
+                    Advisor
+                  </div>
+
+                  <div class="team-list-name">
+                    Advisor C
+                  </div>
+
+                </div>
+
+
+                <div class="team-list-arrow">
+                  →
+                </div>
+
+              </a>
+
+            </li>
+
+
+          </ul>
+
+        </section>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-inner">
+
+
+        <div>
+          © 2026 ManaClinix.
+        </div>
+
+
+        <div class="footer-links">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="index.html#about">
+            Who We Are
+          </a>
+
+          <a href="index.html#contact">
+            Contact
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
