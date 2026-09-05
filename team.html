@@ -18,7 +18,9 @@
   >
 
 
-  <!-- SARABUN -->
+  <!-- =======================================================
+       SARABUN
+  ======================================================== -->
 
   <link
     rel="preconnect"
@@ -45,31 +47,46 @@
   >
 
 
-  <!-- TEAM PAGE STYLES -->
+  <!-- =======================================================
+       TEAM PAGE CSS
+  ======================================================== -->
 
   <style>
 
     /* =========================================================
-       TEAM PAGE
+       PAGE
     ========================================================= */
 
     .team-page {
       min-height: 100vh;
-      padding: 80px 0 110px;
-      background: #ffffff;
+
+      padding:
+        75px 0 110px;
+
+      background:
+        #ffffff;
     }
 
 
-    /* Back link */
+    /* =========================================================
+       BACK LINK
+    ========================================================= */
 
     .team-back {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      display:
+        inline-flex;
 
-      margin-bottom: 52px;
+      align-items:
+        center;
 
-      color: #255a42;
+      gap:
+        8px;
+
+      margin-bottom:
+        48px;
+
+      color:
+        #255a42;
 
       font-family:
         "Sarabun",
@@ -77,14 +94,19 @@
         Arial,
         sans-serif;
 
-      font-size: 14px;
-      font-weight: 700;
+      font-size:
+        14px;
 
-      text-decoration: none;
+      font-weight:
+        700;
+
+      text-decoration:
+        none;
     }
 
     .team-back:hover {
-      color: #c89d3c;
+      color:
+        #c89d3c;
     }
 
 
@@ -93,23 +115,29 @@
     ========================================================= */
 
     .team-page-header {
-      max-width: 760px;
-      margin-bottom: 70px;
+      max-width:
+        780px;
+
+      margin-bottom:
+        65px;
     }
 
-    .team-page-header .eyebrow {
-      margin-bottom: 14px;
-    }
 
     .team-page-header h1 {
-      position: relative;
+      position:
+        relative;
 
-      display: inline-block;
+      display:
+        inline-block;
 
-      margin: 0;
-      padding-bottom: 20px;
+      margin:
+        0;
 
-      color: #061935;
+      padding-bottom:
+        20px;
+
+      color:
+        #061935;
 
       font-family:
         "Sarabun",
@@ -118,51 +146,77 @@
         sans-serif;
 
       font-size:
-        clamp(42px, 6vw, 68px);
+        clamp(42px,6vw,66px);
 
-      line-height: 1.04;
+      line-height:
+        1.04;
 
-      letter-spacing: -.04em;
+      letter-spacing:
+        -.04em;
     }
+
 
     .team-page-header h1::after {
-      content: "";
+      content:
+        "";
 
-      position: absolute;
+      position:
+        absolute;
 
-      left: 0;
-      bottom: 0;
+      left:
+        0;
 
-      width: 92px;
-      height: 4px;
+      bottom:
+        0;
 
-      border-radius: 999px;
+      width:
+        92px;
 
-      background: #c89d3c;
+      height:
+        4px;
+
+      border-radius:
+        999px;
+
+      background:
+        #c89d3c;
     }
 
+
     .team-page-header p {
-      margin: 20px 0 0;
+      margin:
+        20px 0 0;
 
-      color: #46515c;
+      color:
+        #46515c;
 
-      font-size: 18px;
-      line-height: 1.8;
+      font-size:
+        18px;
+
+      line-height:
+        1.8;
     }
 
 
     /* =========================================================
-       TEAM GROUP
+       GROUP
     ========================================================= */
 
     .team-list-section {
-      margin-top: 65px;
+      margin-top:
+        60px;
+
+      scroll-margin-top:
+        110px;
     }
 
-    .team-list-heading {
-      margin: 0 0 24px;
 
-      color: #c89d3c;
+    .team-list-heading {
+      margin:
+        0 0 22px;
+
+      color:
+        #c89d3c;
 
       font-family:
         "Sarabun",
@@ -171,97 +225,138 @@
         sans-serif;
 
       font-size:
-        clamp(28px, 3vw, 38px);
+        clamp(29px,3vw,38px);
 
-      font-weight: 700;
+      font-weight:
+        700;
 
-      line-height: 1.15;
+      line-height:
+        1.15;
     }
 
 
     /* =========================================================
-       TEAM LIST
+       ACCORDION
     ========================================================= */
 
-    .team-list {
-      margin: 0;
-      padding: 0;
-
-      list-style: none;
-
+    .team-accordion {
       border-top:
         1px solid rgba(6,25,53,.12);
     }
 
 
-    .team-list-item {
+    .team-member {
       border-bottom:
         1px solid rgba(6,25,53,.12);
+
+      scroll-margin-top:
+        120px;
     }
 
 
-    .team-list-link {
-      display: grid;
+    /* =========================================================
+       CLICKABLE MEMBER ROW
+    ========================================================= */
+
+    .team-member-button {
+      width:
+        100%;
+
+      display:
+        grid;
 
       grid-template-columns:
-        92px 1fr auto;
+        90px 1fr auto;
 
-      align-items: center;
+      align-items:
+        center;
 
-      gap: 26px;
+      gap:
+        25px;
 
-      min-height: 125px;
+      min-height:
+        120px;
 
-      padding: 18px 4px;
+      padding:
+        18px 6px;
 
-      text-decoration: none;
+      border:
+        0;
+
+      background:
+        transparent;
+
+      text-align:
+        left;
+
+      cursor:
+        pointer;
 
       transition:
-        padding-left 180ms ease,
-        background 180ms ease;
+        background 180ms ease,
+        padding-left 180ms ease;
     }
 
 
-    .team-list-link:hover {
-      padding-left: 12px;
+    .team-member-button:hover {
+      padding-left:
+        13px;
 
       background:
         rgba(248,248,246,.75);
     }
 
 
-    /* Photo */
+    /* =========================================================
+       PHOTO
+    ========================================================= */
 
-    .team-list-photo {
-      width: 82px;
-      height: 82px;
+    .team-member-photo {
+      width:
+        80px;
 
-      overflow: hidden;
+      height:
+        80px;
 
-      border-radius: 50%;
-
-      background: #f8f8f6;
+      overflow:
+        hidden;
 
       border:
-        1px solid rgba(200,157,60,.35);
-    }
+        1px solid rgba(200,157,60,.38);
 
-    .team-list-photo img {
-      width: 100%;
-      height: 100%;
+      border-radius:
+        50%;
 
-      display: block;
-
-      object-fit: cover;
+      background:
+        #f8f8f6;
     }
 
 
-    /* Name / role */
+    .team-member-photo img {
+      width:
+        100%;
 
-    .team-list-role {
-      margin-bottom: 4px;
+      height:
+        100%;
 
-      color: #255a42;
+      display:
+        block;
+
+      object-fit:
+        cover;
+    }
+
+
+    /* =========================================================
+       MEMBER NAME
+    ========================================================= */
+
+    .team-member-role {
+      margin-bottom:
+        4px;
+
+      color:
+        #255a42;
 
       font-family:
         "Sarabun",
@@ -269,17 +364,23 @@
         Arial,
         sans-serif;
 
-      font-size: 11px;
-      font-weight: 700;
+      font-size:
+        11px;
 
-      letter-spacing: .14em;
+      font-weight:
+        700;
 
-      text-transform: uppercase;
+      letter-spacing:
+        .14em;
+
+      text-transform:
+        uppercase;
     }
 
 
-    .team-list-name {
-      color: #061935;
+    .team-member-name {
+      color:
+        #061935;
 
       font-family:
         "Sarabun",
@@ -287,33 +388,227 @@
         Arial,
         sans-serif;
 
-      font-size: 25px;
-      font-weight: 700;
+      font-size:
+        25px;
 
-      line-height: 1.2;
+      font-weight:
+        700;
+
+      line-height:
+        1.2;
     }
 
 
-    /* Arrow */
+    /* =========================================================
+       PLUS / MINUS
+    ========================================================= */
 
-    .team-list-arrow {
-      color: #c89d3c;
+    .team-member-toggle {
+      position:
+        relative;
 
-      font-family:
-        "Sarabun",
-        Helvetica,
-        Arial,
-        sans-serif;
+      width:
+        42px;
 
-      font-size: 24px;
+      height:
+        42px;
+
+      display:
+        grid;
+
+      place-items:
+        center;
+
+      border:
+        1px solid rgba(200,157,60,.45);
+
+      border-radius:
+        12px;
+
+      color:
+        #c89d3c;
+    }
+
+
+    .team-member-plus {
+      position:
+        relative;
+
+      width:
+        16px;
+
+      height:
+        16px;
+    }
+
+
+    .team-member-plus::before,
+    .team-member-plus::after {
+      content:
+        "";
+
+      position:
+        absolute;
+
+      left:
+        50%;
+
+      top:
+        50%;
+
+      width:
+        15px;
+
+      height:
+        2px;
+
+      border-radius:
+        999px;
+
+      background:
+        currentColor;
+
+      transform:
+        translate(-50%,-50%);
 
       transition:
         transform 180ms ease;
     }
 
-    .team-list-link:hover
-    .team-list-arrow {
-      transform: translateX(5px);
+
+    .team-member-plus::after {
+      transform:
+        translate(-50%,-50%)
+        rotate(90deg);
+    }
+
+
+    .team-member.is-open
+    .team-member-plus::after {
+      transform:
+        translate(-50%,-50%)
+        rotate(0deg);
+    }
+
+
+    /* =========================================================
+       BIO
+    ========================================================= */
+
+    .team-member-bio {
+      display:
+        grid;
+
+      grid-template-rows:
+        0fr;
+
+      transition:
+        grid-template-rows 280ms ease;
+    }
+
+
+    .team-member.is-open
+    .team-member-bio {
+      grid-template-rows:
+        1fr;
+    }
+
+
+    .team-member-bio-inner {
+      overflow:
+        hidden;
+    }
+
+
+    .team-member-bio-content {
+      max-width:
+        820px;
+
+      margin-left:
+        115px;
+
+      padding:
+        0 20px 32px 0;
+    }
+
+
+    .team-member-bio-content p {
+      margin:
+        0;
+
+      color:
+        #46515c;
+
+      font-size:
+        17px;
+
+      line-height:
+        1.8;
+    }
+
+
+    /* Optional expertise line */
+
+    .team-member-expertise {
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        8px;
+
+      margin-top:
+        18px;
+    }
+
+
+    .team-member-expertise span {
+      display:
+        inline-flex;
+
+      padding:
+        7px 11px;
+
+      border:
+        1px solid rgba(200,157,60,.32);
+
+      border-radius:
+        999px;
+
+      color:
+        #255a42;
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size:
+        12px;
+
+      font-weight:
+        600;
+    }
+
+
+    /* =========================================================
+       OPEN STATE
+    ========================================================= */
+
+    .team-member.is-open
+    .team-member-button {
+      background:
+        rgba(248,248,246,.65);
+    }
+
+
+    .team-member.is-open
+    .team-member-name {
+      color:
+        #255a42;
     }
 
 
@@ -324,33 +619,84 @@
     @media (max-width: 760px) {
 
       .team-page {
-        padding: 55px 0 80px;
+        padding:
+          55px 0 80px;
       }
+
 
       .team-page-header {
-        margin-bottom: 50px;
+        margin-bottom:
+          48px;
       }
+
 
       .team-list-section {
-        margin-top: 50px;
+        margin-top:
+          48px;
       }
 
-      .team-list-link {
+
+      .team-member-button {
         grid-template-columns:
-          68px 1fr auto;
+          64px 1fr 38px;
 
-        gap: 17px;
+        gap:
+          15px;
 
-        min-height: 105px;
+        min-height:
+          100px;
+
+        padding:
+          15px 3px;
       }
 
-      .team-list-photo {
-        width: 62px;
-        height: 62px;
+
+      .team-member-photo {
+        width:
+          60px;
+
+        height:
+          60px;
       }
 
-      .team-list-name {
-        font-size: 20px;
+
+      .team-member-name {
+        font-size:
+          20px;
+      }
+
+
+      .team-member-toggle {
+        width:
+          36px;
+
+        height:
+          36px;
+      }
+
+
+      .team-member-bio-content {
+        margin-left:
+          0;
+
+        padding:
+          4px 10px 28px;
+      }
+
+
+      .team-member-bio-content p {
+        font-size:
+          16px;
+      }
+
+    }
+
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .team-member-bio {
+        transition:
+          none;
       }
 
     }
@@ -365,20 +711,14 @@
 
   <!-- =========================================================
        HEADER
-       Same header structure as index.html
-  ========================================================= -->
+  ========================================================== -->
 
-  <header
-    class="header"
-    id="header"
-  >
+  <header class="header">
 
     <div class="container">
 
       <div class="nav-inner">
 
-
-        <!-- LOGO -->
 
         <a
           href="index.html"
@@ -398,12 +738,11 @@
         </a>
 
 
-        <!-- NAVIGATION -->
-
         <nav
           class="nav-links"
           aria-label="Primary navigation"
         >
+
 
           <a
             href="index.html"
@@ -449,6 +788,7 @@
             For Patients
           </a>
 
+
         </nav>
 
 
@@ -458,6 +798,7 @@
         >
           Contact us
         </a>
+
 
       </div>
 
@@ -469,7 +810,7 @@
 
   <!-- =========================================================
        TEAM
-  ========================================================= -->
+  ========================================================== -->
 
   <main>
 
@@ -477,8 +818,6 @@
 
       <div class="container">
 
-
-        <!-- BACK -->
 
         <a
           href="index.html#about"
@@ -489,9 +828,12 @@
 
 
 
-        <!-- PAGE HEADER -->
+        <!-- =====================================================
+             PAGE HEADER
+        ====================================================== -->
 
         <div class="team-page-header">
+
 
           <p class="eyebrow">
             Who we are
@@ -506,10 +848,11 @@
           <p>
 
             Meet the founders and advisors bringing together
-            clinical research expertise, regional knowledge and
-            strategic leadership at ManaClinix.
+            clinical research expertise, regional knowledge
+            and strategic leadership at ManaClinix.
 
           </p>
+
 
         </div>
 
@@ -519,7 +862,10 @@
              FOUNDERS
         ====================================================== -->
 
-        <section class="team-list-section">
+        <section
+          class="team-list-section"
+          id="founders"
+        >
 
 
           <h2 class="team-list-heading">
@@ -527,19 +873,28 @@
           </h2>
 
 
-          <ul class="team-list">
+          <div class="team-accordion">
 
 
-            <!-- FOUNDER A -->
+            <!-- =================================================
+                 FOUNDER A
+            ================================================== -->
 
-            <li class="team-list-item">
+            <article
+              class="team-member"
+              id="founder-a"
+              data-member="founder-a"
+            >
 
-              <a
-                href="profile.html?member=founder-a"
-                class="team-list-link"
+
+              <button
+                class="team-member-button"
+                type="button"
+                aria-expanded="false"
               >
 
-                <div class="team-list-photo">
+
+                <div class="team-member-photo">
 
                   <img
                     src="images/founder-a.jpg"
@@ -551,37 +906,96 @@
 
                 <div>
 
-                  <div class="team-list-role">
+                  <div class="team-member-role">
                     Founder
                   </div>
 
-                  <div class="team-list-name">
+                  <div class="team-member-name">
                     Founder A
                   </div>
 
                 </div>
 
 
-                <div class="team-list-arrow">
-                  →
+                <div
+                  class="team-member-toggle"
+                  aria-hidden="true"
+                >
+
+                  <span class="team-member-plus"></span>
+
                 </div>
 
-              </a>
 
-            </li>
-
+              </button>
 
 
-            <!-- FOUNDER B -->
+              <div class="team-member-bio">
 
-            <li class="team-list-item">
+                <div class="team-member-bio-inner">
 
-              <a
-                href="profile.html?member=founder-b"
-                class="team-list-link"
+                  <div class="team-member-bio-content">
+
+
+                    <p>
+
+                      Founder A is a co-founder of ManaClinix with
+                      experience across clinical research, healthcare
+                      and the development of patient-centred research
+                      models. Add the approved short biography here,
+                      including relevant professional experience,
+                      expertise and the founder's role at ManaClinix.
+
+                    </p>
+
+
+                    <div class="team-member-expertise">
+
+                      <span>
+                        Clinical Research
+                      </span>
+
+                      <span>
+                        Strategy
+                      </span>
+
+                      <span>
+                        African Healthcare
+                      </span>
+
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 FOUNDER B
+            ================================================== -->
+
+            <article
+              class="team-member"
+              id="founder-b"
+              data-member="founder-b"
+            >
+
+
+              <button
+                class="team-member-button"
+                type="button"
+                aria-expanded="false"
               >
 
-                <div class="team-list-photo">
+
+                <div class="team-member-photo">
 
                   <img
                     src="images/founder-b.jpg"
@@ -593,27 +1007,77 @@
 
                 <div>
 
-                  <div class="team-list-role">
+                  <div class="team-member-role">
                     Founder
                   </div>
 
-                  <div class="team-list-name">
+                  <div class="team-member-name">
                     Founder B
                   </div>
 
                 </div>
 
 
-                <div class="team-list-arrow">
-                  →
+                <div
+                  class="team-member-toggle"
+                  aria-hidden="true"
+                >
+
+                  <span class="team-member-plus"></span>
+
                 </div>
 
-              </a>
 
-            </li>
+              </button>
 
 
-          </ul>
+              <div class="team-member-bio">
+
+                <div class="team-member-bio-inner">
+
+                  <div class="team-member-bio-content">
+
+
+                    <p>
+
+                      Founder B is a co-founder of ManaClinix.
+                      Add the approved short biography here,
+                      highlighting relevant experience in healthcare,
+                      clinical research, technology, operations or
+                      business development and the founder's role
+                      within ManaClinix.
+
+                    </p>
+
+
+                    <div class="team-member-expertise">
+
+                      <span>
+                        Healthcare
+                      </span>
+
+                      <span>
+                        Operations
+                      </span>
+
+                      <span>
+                        Innovation
+                      </span>
+
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </article>
+
+
+          </div>
 
         </section>
 
@@ -623,7 +1087,10 @@
              ADVISORS
         ====================================================== -->
 
-        <section class="team-list-section">
+        <section
+          class="team-list-section"
+          id="advisors"
+        >
 
 
           <h2 class="team-list-heading">
@@ -631,19 +1098,26 @@
           </h2>
 
 
-          <ul class="team-list">
+          <div class="team-accordion">
 
 
             <!-- ADVISOR A -->
 
-            <li class="team-list-item">
+            <article
+              class="team-member"
+              id="advisor-a"
+              data-member="advisor-a"
+            >
 
-              <a
-                href="profile.html?member=advisor-a"
-                class="team-list-link"
+
+              <button
+                class="team-member-button"
+                type="button"
+                aria-expanded="false"
               >
 
-                <div class="team-list-photo">
+
+                <div class="team-member-photo">
 
                   <img
                     src="images/advisor-a.jpg"
@@ -655,37 +1129,74 @@
 
                 <div>
 
-                  <div class="team-list-role">
+                  <div class="team-member-role">
                     Advisor
                   </div>
 
-                  <div class="team-list-name">
+                  <div class="team-member-name">
                     Advisor A
                   </div>
 
                 </div>
 
 
-                <div class="team-list-arrow">
-                  →
+                <div
+                  class="team-member-toggle"
+                  aria-hidden="true"
+                >
+
+                  <span class="team-member-plus"></span>
+
                 </div>
 
-              </a>
 
-            </li>
+              </button>
+
+
+              <div class="team-member-bio">
+
+                <div class="team-member-bio-inner">
+
+                  <div class="team-member-bio-content">
+
+                    <p>
+
+                      Advisor A supports ManaClinix with specialist
+                      expertise and strategic guidance. Add the
+                      advisor's approved short biography here,
+                      including their professional background,
+                      current position and relevant areas of expertise.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </article>
 
 
 
             <!-- ADVISOR B -->
 
-            <li class="team-list-item">
+            <article
+              class="team-member"
+              id="advisor-b"
+              data-member="advisor-b"
+            >
 
-              <a
-                href="profile.html?member=advisor-b"
-                class="team-list-link"
+
+              <button
+                class="team-member-button"
+                type="button"
+                aria-expanded="false"
               >
 
-                <div class="team-list-photo">
+
+                <div class="team-member-photo">
 
                   <img
                     src="images/advisor-b.jpg"
@@ -697,37 +1208,74 @@
 
                 <div>
 
-                  <div class="team-list-role">
+                  <div class="team-member-role">
                     Advisor
                   </div>
 
-                  <div class="team-list-name">
+                  <div class="team-member-name">
                     Advisor B
                   </div>
 
                 </div>
 
 
-                <div class="team-list-arrow">
-                  →
+                <div
+                  class="team-member-toggle"
+                  aria-hidden="true"
+                >
+
+                  <span class="team-member-plus"></span>
+
                 </div>
 
-              </a>
 
-            </li>
+              </button>
+
+
+              <div class="team-member-bio">
+
+                <div class="team-member-bio-inner">
+
+                  <div class="team-member-bio-content">
+
+                    <p>
+
+                      Advisor B supports ManaClinix with specialist
+                      expertise and strategic guidance. Add the
+                      advisor's approved short biography here,
+                      highlighting their relevant professional
+                      experience and contribution to ManaClinix.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </article>
 
 
 
             <!-- ADVISOR C -->
 
-            <li class="team-list-item">
+            <article
+              class="team-member"
+              id="advisor-c"
+              data-member="advisor-c"
+            >
 
-              <a
-                href="profile.html?member=advisor-c"
-                class="team-list-link"
+
+              <button
+                class="team-member-button"
+                type="button"
+                aria-expanded="false"
               >
 
-                <div class="team-list-photo">
+
+                <div class="team-member-photo">
 
                   <img
                     src="images/advisor-c.jpg"
@@ -739,27 +1287,57 @@
 
                 <div>
 
-                  <div class="team-list-role">
+                  <div class="team-member-role">
                     Advisor
                   </div>
 
-                  <div class="team-list-name">
+                  <div class="team-member-name">
                     Advisor C
                   </div>
 
                 </div>
 
 
-                <div class="team-list-arrow">
-                  →
+                <div
+                  class="team-member-toggle"
+                  aria-hidden="true"
+                >
+
+                  <span class="team-member-plus"></span>
+
                 </div>
 
-              </a>
 
-            </li>
+              </button>
 
 
-          </ul>
+              <div class="team-member-bio">
+
+                <div class="team-member-bio-inner">
+
+                  <div class="team-member-bio-content">
+
+                    <p>
+
+                      Advisor C supports ManaClinix with specialist
+                      expertise and strategic guidance. Add the
+                      advisor's approved short biography here,
+                      including their professional background and
+                      areas of expertise relevant to ManaClinix.
+
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </article>
+
+
+          </div>
 
         </section>
 
@@ -774,7 +1352,7 @@
 
   <!-- =========================================================
        FOOTER
-  ========================================================= -->
+  ========================================================== -->
 
   <footer class="footer">
 
@@ -810,6 +1388,247 @@
     </div>
 
   </footer>
+
+
+
+  <!-- =========================================================
+       TEAM ACCORDION JAVASCRIPT
+  ========================================================== -->
+
+  <script>
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      function () {
+
+
+        const members =
+          document.querySelectorAll(
+            ".team-member"
+          );
+
+
+        /* =====================================================
+           OPEN / CLOSE MEMBER
+        ====================================================== */
+
+        function openMember(
+          member,
+          shouldScroll = false
+        ) {
+
+
+          /*
+            Close all other members
+          */
+
+          members.forEach(
+            function (item) {
+
+              if (item !== member) {
+
+                item.classList.remove(
+                  "is-open"
+                );
+
+
+                const button =
+                  item.querySelector(
+                    ".team-member-button"
+                  );
+
+
+                if (button) {
+
+                  button.setAttribute(
+                    "aria-expanded",
+                    "false"
+                  );
+
+                }
+
+              }
+
+            }
+          );
+
+
+          /*
+            Open selected member
+          */
+
+          member.classList.add(
+            "is-open"
+          );
+
+
+          const button =
+            member.querySelector(
+              ".team-member-button"
+            );
+
+
+          if (button) {
+
+            button.setAttribute(
+              "aria-expanded",
+              "true"
+            );
+
+          }
+
+
+          /*
+            Scroll selected person into view
+          */
+
+          if (shouldScroll) {
+
+            setTimeout(
+              function () {
+
+                member.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center"
+                });
+
+              },
+              120
+            );
+
+          }
+
+        }
+
+
+
+        /* =====================================================
+           CLICKING MEMBERS
+        ====================================================== */
+
+        members.forEach(
+          function (member) {
+
+
+            const button =
+              member.querySelector(
+                ".team-member-button"
+              );
+
+
+            if (!button) {
+              return;
+            }
+
+
+            button.addEventListener(
+              "click",
+              function () {
+
+
+                const isOpen =
+                  member.classList.contains(
+                    "is-open"
+                  );
+
+
+                /*
+                  Close all first
+                */
+
+                members.forEach(
+                  function (item) {
+
+                    item.classList.remove(
+                      "is-open"
+                    );
+
+
+                    const itemButton =
+                      item.querySelector(
+                        ".team-member-button"
+                      );
+
+
+                    if (itemButton) {
+
+                      itemButton.setAttribute(
+                        "aria-expanded",
+                        "false"
+                      );
+
+                    }
+
+                  }
+                );
+
+
+                /*
+                  Re-open if it wasn't
+                  already open
+                */
+
+                if (!isOpen) {
+
+                  openMember(
+                    member,
+                    false
+                  );
+
+                }
+
+              }
+            );
+
+          }
+        );
+
+
+
+        /* =====================================================
+           OPEN PERSON FROM HOMEPAGE
+
+           Example:
+           team.html?member=founder-a
+        ====================================================== */
+
+        const params =
+          new URLSearchParams(
+            window.location.search
+          );
+
+
+        const selectedMember =
+          params.get("member");
+
+
+        if (selectedMember) {
+
+
+          const target =
+            document.querySelector(
+              '[data-member="' +
+              selectedMember +
+              '"]'
+            );
+
+
+          if (target) {
+
+            openMember(
+              target,
+              true
+            );
+
+          }
+
+        }
+
+
+      }
+    );
+
+  </script>
 
 
 </body>
