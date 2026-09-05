@@ -2290,8 +2290,230 @@ textarea {
   font-size: 13px;
   line-height: 1.65;
 }
+
 /* =========================================================
-   16. TEAM PAGE
+   16. SECTION VIEWPORT / SCROLL BEHAVIOUR
+========================================================= */
+
+/*
+   Sticky header is ~94px high.
+
+   This ensures clicking:
+   Who We Are
+   What We Do
+   For Sponsors
+   For CROs
+   For Patients
+   Contact
+
+   positions the section BELOW the header instead of
+   hiding its heading behind it.
+*/
+
+#about,
+#what-we-do,
+#sponsors,
+#cros,
+#patients,
+#contact {
+  scroll-margin-top: 108px;
+}
+
+
+/*
+   Slightly reduce vertical padding so the heading +
+   primary content are visible together on normal
+   laptop screens.
+*/
+
+section.block {
+  padding: 64px 0;
+}
+
+.what-we-do {
+  padding: 64px 0;
+}
+
+
+/* Tighter heading spacing */
+
+.section-head {
+  margin-bottom: 26px;
+}
+
+.section-head p {
+  margin-top: 12px;
+}
+
+
+/* =========================================================
+   SPONSOR / CRO / PATIENT SECTION HEIGHT
+========================================================= */
+
+/*
+   These three sections are compact enough that we can
+   aim to keep the entire main section visible on a
+   standard desktop/laptop viewport.
+*/
+
+#sponsors,
+#cros,
+#patients {
+  min-height: calc(100vh - 94px);
+
+  display: flex;
+  align-items: center;
+}
+
+
+/*
+   Prevent unnecessary vertical growth of the main panels.
+*/
+
+#sponsors .card-body,
+#cros .card-body,
+#patients .card-body,
+#sponsors .sponsor-value-card .card-body,
+#cros .sponsor-value-card .card-body,
+#patients .sponsor-value-card .card-body {
+  padding: 24px;
+}
+
+
+/*
+   Slightly more compact coloured cards.
+*/
+
+#sponsors .africa-reason,
+#cros .africa-reason,
+#patients .africa-reason {
+  min-height: 135px;
+
+  padding: 15px 17px;
+}
+
+
+#sponsors .africa-reasons,
+#cros .africa-reasons,
+#patients .africa-reasons {
+  gap: 10px;
+
+  margin-top: 14px;
+}
+
+
+/* =========================================================
+   WHAT WE DO — FIT BETTER ON SCREEN
+========================================================= */
+
+#what-we-do {
+  min-height: calc(100vh - 94px);
+
+  display: flex;
+  align-items: center;
+}
+
+
+#what-we-do .what-card,
+#what-we-do .what-card-trigger {
+  min-height: 340px;
+}
+
+
+#what-we-do .what-card-trigger,
+#what-we-do .what-card-content {
+  padding: 24px;
+}
+
+
+#what-we-do .what-title {
+  font-size: 23px;
+}
+
+
+#what-we-do .what-short {
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   WHO WE ARE
+========================================================= */
+
+/*
+   Who We Are includes Mission, Vision AND the full team,
+   so forcing the entire section into one viewport would
+   make everything too small.
+
+   Instead, the section lands correctly below the header
+   and Mission/Vision remain compact.
+*/
+
+#about .mission-panel,
+#about .vision-panel {
+  min-height: 310px;
+
+  padding: 28px;
+}
+
+
+#about .team-section {
+  margin-top: 52px;
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  #about,
+  #what-we-do,
+  #sponsors,
+  #cros,
+  #patients,
+  #contact {
+    scroll-margin-top: 96px;
+  }
+
+
+  /*
+     Do not force viewport heights on tablets.
+  */
+
+  #what-we-do,
+  #sponsors,
+  #cros,
+  #patients {
+    min-height: auto;
+
+    display: block;
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  section.block,
+  .what-we-do {
+    padding: 54px 0;
+  }
+
+
+  #about,
+  #what-we-do,
+  #sponsors,
+  #cros,
+  #patients,
+  #contact {
+    scroll-margin-top: 86px;
+  }
+
+}
+/* =========================================================
+   17. TEAM PAGE
 ========================================================= */
 
 .team-page {
