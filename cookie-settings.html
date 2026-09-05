@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Cookie Settings | ManaClinix</title>
+
+  <meta
+    name="description"
+    content="Manage cookie preferences for the ManaClinix website."
+  >
+
+
+  <!-- =======================================================
+       LOCAL SARABUN
+  ======================================================== -->
+
+  <style>
+
+    @font-face {
+      font-family: "Sarabun";
+
+      src:
+        url("fonts/Sarabun-Regular.woff2")
+        format("woff2");
+
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Sarabun";
+
+      src:
+        url("fonts/Sarabun-SemiBold.woff2")
+        format("woff2");
+
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Sarabun";
+
+      src:
+        url("fonts/Sarabun-Bold.woff2")
+        format("woff2");
+
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+  </style>
+
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+
+
+  <style>
+
+    /* =====================================================
+       COOKIE PAGE
+    ====================================================== */
+
+    .cookie-page {
+      padding:
+        70px 0 100px;
+
+      background:
+        var(--white);
+    }
+
+
+    .cookie-header {
+      max-width:
+        820px;
+
+      margin-bottom:
+        48px;
+    }
+
+
+    .cookie-header h1 {
+      position:
+        relative;
+
+      display:
+        inline-block;
+
+      margin:
+        0;
+
+      padding-bottom:
+        18px;
+
+      color:
+        var(--teal);
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size:
+        clamp(38px,5vw,58px);
+
+      line-height:
+        1.05;
+
+      letter-spacing:
+        -.035em;
+    }
+
+
+    .cookie-header h1::after {
+      content:
+        "";
+
+      position:
+        absolute;
+
+      left:
+        0;
+
+      bottom:
+        0;
+
+      width:
+        82px;
+
+      height:
+        4px;
+
+      border-radius:
+        999px;
+
+      background:
+        var(--gold);
+    }
+
+
+    .cookie-header p {
+      margin:
+        20px 0 0;
+
+      color:
+        var(--slate);
+
+      font-size:
+        18px;
+
+      line-height:
+        1.75;
+    }
+
+
+    .cookie-content {
+      max-width:
+        900px;
+    }
+
+
+    .cookie-panel {
+      margin-bottom:
+        18px;
+
+      padding:
+        25px;
+
+      border:
+        1px solid rgba(6,25,53,.12);
+
+      border-radius:
+        var(--radius-large);
+
+      background:
+        var(--white);
+
+      box-shadow:
+        var(--shadow-soft);
+    }
+
+
+    .cookie-panel h2 {
+      margin:
+        0 0 10px;
+
+      color:
+        var(--teal);
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size:
+        24px;
+    }
+
+
+    .cookie-panel p {
+      margin:
+        0;
+
+      color:
+        var(--slate);
+
+      font-size:
+        16px;
+
+      line-height:
+        1.75;
+    }
+
+
+    .cookie-status {
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      margin-top:
+        16px;
+
+      padding:
+        6px 10px;
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(37,90,66,.10);
+
+      color:
+        var(--green);
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size:
+        12px;
+
+      font-weight:
+        700;
+
+      letter-spacing:
+        .04em;
+    }
+
+
+    .cookie-actions {
+      display:
+        flex;
+
+      flex-wrap:
+        wrap;
+
+      gap:
+        10px;
+
+      margin-top:
+        20px;
+    }
+
+
+    .cookie-btn {
+      display:
+        inline-flex;
+
+      align-items:
+        center;
+
+      justify-content:
+        center;
+
+      padding:
+        12px 20px;
+
+      border:
+        1px solid transparent;
+
+      border-radius:
+        999px;
+
+      font-family:
+        "Sarabun",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size:
+        14px;
+
+      font-weight:
+        700;
+
+      cursor:
+        pointer;
+    }
+
+
+    .cookie-btn-accept {
+      background:
+        var(--green);
+
+      color:
+        var(--white);
+    }
+
+
+    .cookie-btn-reject {
+      background:
+        var(--teal);
+
+      color:
+        var(--white);
+    }
+
+
+    .cookie-btn-settings {
+      background:
+        var(--white);
+
+      color:
+        var(--teal);
+
+      border-color:
+        rgba(6,25,53,.18);
+    }
+
+
+    .cookie-note {
+      margin-top:
+        20px;
+
+      color:
+        var(--slate);
+
+      font-size:
+        13px;
+
+      line-height:
+        1.7;
+    }
+
+
+    @media (max-width: 760px) {
+
+      .cookie-page {
+        padding:
+          50px 0 75px;
+      }
+
+      .cookie-panel {
+        padding:
+          21px;
+      }
+
+      .cookie-panel p {
+        font-size:
+          15px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================================================
+       HEADER
+  ========================================================== -->
+
+  <header class="header">
+
+    <div class="container">
+
+      <div class="nav-inner">
+
+
+        <a
+          href="index.html"
+          class="brand"
+          aria-label="ManaClinix home"
+        >
+
+          <div class="brand-logo">
+
+            <img
+              src="images/ManaClinix_Logo_web.png"
+              alt="ManaClinix"
+            >
+
+          </div>
+
+        </a>
+
+
+        <nav
+          class="nav-links"
+          aria-label="Primary navigation"
+        >
+
+          <a
+            href="index.html"
+            class="home-nav"
+            aria-label="Home"
+          >
+
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+
+              <path
+                d="M12 3.2 2.8 11h2.4v9h5.2v-5.6h3.2V20h5.2v-9h2.4L12 3.2z"
+              />
+
+            </svg>
+
+          </a>
+
+
+          <a href="index.html#about">
+            Who We Are
+          </a>
+
+          <a href="index.html#what-we-do">
+            What We Do
+          </a>
+
+          <a href="index.html#sponsors">
+            For Sponsors
+          </a>
+
+          <a href="index.html#cros">
+            For CROs
+          </a>
+
+          <a href="index.html#patients">
+            For Patients
+          </a>
+
+        </nav>
+
+
+        <a
+          href="index.html#contact"
+          class="nav-cta"
+        >
+          Contact us
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================================================
+       COOKIE SETTINGS
+  ========================================================== -->
+
+  <main>
+
+    <section class="cookie-page">
+
+      <div class="container">
+
+
+        <div class="cookie-header">
+
+          <p class="eyebrow">
+            Privacy
+          </p>
+
+
+          <h1>
+            Cookie Settings
+          </h1>
+
+
+          <p>
+
+            We use only the technologies needed to operate and
+            protect this website unless you choose to enable
+            additional optional technologies.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="cookie-content">
+
+
+          <!-- =================================================
+               NECESSARY
+          ================================================== -->
+
+          <div class="cookie-panel">
+
+            <h2>
+              Necessary technologies
+            </h2>
+
+
+            <p>
+
+              These technologies are required for basic website
+              functionality, security or to remember your privacy
+              preferences. They cannot be switched off through this
+              settings panel where they are technically necessary.
+
+            </p>
+
+
+            <div class="cookie-status">
+              Always active
+            </div>
+
+          </div>
+
+
+
+          <!-- =================================================
+               ANALYTICS
+          ================================================== -->
+
+          <div class="cookie-panel">
+
+            <h2>
+              Analytics
+            </h2>
+
+
+            <p>
+
+              Analytics technologies help us understand how visitors
+              use the website, such as which pages are visited and
+              how the website performs. These technologies are
+              optional and should only be activated where the
+              required consent has been obtained.
+
+            </p>
+
+
+            <div
+              class="cookie-status"
+              id="analyticsStatus"
+            >
+              Optional — currently disabled
+            </div>
+
+
+            <div class="cookie-actions">
+
+              <button
+                type="button"
+                class="cookie-btn cookie-btn-accept"
+                id="acceptAnalytics"
+              >
+                Allow analytics
+              </button>
+
+
+              <button
+                type="button"
+                class="cookie-btn cookie-btn-reject"
+                id="rejectAnalytics"
+              >
+                Reject analytics
+              </button>
+
+            </div>
+
+
+            <p class="cookie-note">
+
+              No analytics service is activated by this page unless
+              corresponding analytics code has been added to the
+              website.
+
+            </p>
+
+          </div>
+
+
+
+          <!-- =================================================
+               THIRD PARTY
+          ================================================== -->
+
+          <div class="cookie-panel">
+
+            <h2>
+              Third-party technologies
+            </h2>
+
+
+            <p>
+
+              Third-party services such as embedded media, maps,
+              social media tools or other external technologies may
+              create additional requests or store information on your
+              device. Any such service should be listed here before
+              it is activated on the live website.
+
+            </p>
+
+
+            <div class="cookie-status">
+              Configure only when used
+            </div>
+
+          </div>
+
+
+
+          <!-- =================================================
+               CHANGE PREFERENCES
+          ================================================== -->
+
+          <div class="cookie-panel">
+
+            <h2>
+              Change your choices
+            </h2>
+
+
+            <p>
+
+              You can change your optional cookie preference at any
+              time from this page. Your choice is stored locally in
+              your browser.
+
+            </p>
+
+
+            <div class="cookie-actions">
+
+              <button
+                type="button"
+                class="cookie-btn cookie-btn-accept"
+                id="acceptAllCookies"
+              >
+                Accept optional
+              </button>
+
+
+              <button
+                type="button"
+                class="cookie-btn cookie-btn-reject"
+                id="rejectAllCookies"
+              >
+                Reject optional
+              </button>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <div class="footer-inner">
+
+
+        <div>
+          © 2026 ManaClinix.
+        </div>
+
+
+        <div class="footer-links">
+
+          <a href="index.html">
+            Home
+          </a>
+
+          <a href="privacy.html">
+            Privacy Policy
+          </a>
+
+          <a href="cookie-settings.html">
+            Cookie Settings
+          </a>
+
+          <a href="imprint.html">
+            Imprint
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =========================================================
+       COOKIE PREFERENCE SCRIPT
+  ========================================================== -->
+
+  <script>
+
+    (function () {
+
+
+      const COOKIE_NAME =
+        "manaclinix_analytics_consent";
+
+
+      const status =
+        document.getElementById(
+          "analyticsStatus"
+        );
+
+
+      function updateStatus() {
+
+        const value =
+          localStorage.getItem(
+            COOKIE_NAME
+          );
+
+
+        if (value === "accepted") {
+
+          status.textContent =
+            "Optional — enabled";
+
+        } else {
+
+          status.textContent =
+            "Optional — currently disabled";
+
+        }
+
+      }
+
+
+      function saveChoice(
+        value
+      ) {
+
+        localStorage.setItem(
+          COOKIE_NAME,
+          value
+        );
+
+
+        updateStatus();
+
+
+        /*
+          IMPORTANT:
+          If analytics is added later, load
+          the analytics script here ONLY when
+          value === "accepted".
+        */
+
+      }
+
+
+      document
+        .getElementById(
+          "acceptAnalytics"
+        )
+        .addEventListener(
+          "click",
+          function () {
+
+            saveChoice(
+              "accepted"
+            );
+
+          }
+        );
+
+
+      document
+        .getElementById(
+          "rejectAnalytics"
+        )
+        .addEventListener(
+          "click",
+          function () {
+
+            saveChoice(
+              "rejected"
+            );
+
+          }
+        );
+
+
+      document
+        .getElementById(
+          "acceptAllCookies"
+        )
+        .addEventListener(
+          "click",
+          function () {
+
+            saveChoice(
+              "accepted"
+            );
+
+          }
+        );
+
+
+      document
+        .getElementById(
+          "rejectAllCookies"
+        )
+        .addEventListener(
+          "click",
+          function () {
+
+            saveChoice(
+              "rejected"
+            );
+
+          }
+        );
+
+
+      updateStatus();
+
+
+    })();
+
+  </script>
+
+
+</body>
+
+</html>
