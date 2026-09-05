@@ -19,28 +19,10 @@
 
 
   <!-- =======================================================
-       FONT
-  ======================================================== -->
-
-  <link
-    rel="preconnect"
-    href="https://fonts.googleapis.com"
-  >
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Sarabun:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-
-  <!-- =======================================================
        MAIN STYLESHEET
+
+       Sarabun is loaded locally from style.css.
+       No Google Fonts connection is required.
   ======================================================== -->
 
   <link
@@ -94,9 +76,6 @@
           class="nav-links"
           aria-label="Primary navigation"
         >
-
-
-          <!-- HOME -->
 
           <a
             href="#home"
@@ -231,10 +210,7 @@
         <div class="hero-grid">
 
 
-          <!-- LEFT -->
-
           <div class="hero-copy">
-
 
             <p class="eyebrow">
               Patient-Centric • Pan-African
@@ -262,7 +238,6 @@
 
             <div class="hero-actions">
 
-
               <a
                 href="#contact"
                 class="btn btn-primary"
@@ -284,7 +259,6 @@
                 Explore what we do
               </a>
 
-
             </div>
 
           </div>
@@ -305,11 +279,7 @@
                 aria-label="ManaClinix pan-African clinical research network"
               >
 
-
                 <defs>
-
-
-                  <!-- AFRICA DOT PATTERN -->
 
                   <pattern
                     id="dots"
@@ -328,11 +298,7 @@
                   </pattern>
 
 
-
-                  <!-- AFRICA SHAPE -->
-
                   <clipPath id="africaClip">
-
 
                     <path
                       d="
@@ -349,9 +315,6 @@
                       "
                     />
 
-
-                    <!-- MADAGASCAR -->
-
                     <path
                       d="
                         M650 383
@@ -361,14 +324,12 @@
                       "
                     />
 
-
                   </clipPath>
 
                 </defs>
 
 
-
-                <!-- AFRICA DOT MAP -->
+                <!-- AFRICA -->
 
                 <g clip-path="url(#africaClip)">
 
@@ -383,7 +344,6 @@
                 </g>
 
 
-
                 <!-- ORBITS -->
 
                 <ellipse
@@ -394,7 +354,6 @@
                   class="route green"
                 />
 
-
                 <ellipse
                   cx="472"
                   cy="271"
@@ -402,7 +361,6 @@
                   ry="235"
                   class="route gold"
                 />
-
 
                 <ellipse
                   cx="472"
@@ -413,8 +371,7 @@
                 />
 
 
-
-                <!-- NETWORK CONNECTIONS -->
+                <!-- CONNECTIONS -->
 
                 <g>
 
@@ -433,8 +390,7 @@
                 </g>
 
 
-
-                <!-- NETWORK NODES -->
+                <!-- NODES -->
 
                 <circle cx="335" cy="105" r="22" class="node green"/>
                 <circle cx="455" cy="135" r="22" class="node teal"/>
@@ -449,11 +405,9 @@
                 <circle cx="230" cy="190" r="22" class="node green"/>
 
 
-
                 <!-- ANIMATED PULSES -->
 
                 <g aria-hidden="true">
-
 
                   <!-- GREEN -->
 
@@ -515,7 +469,7 @@
                   />
 
 
-                  <!-- BLUE -->
+                  <!-- TEAL -->
 
                   <circle
                     r="5"
@@ -529,9 +483,7 @@
                     style="offset-path:path('M 520.82,322.94 L 640,445');"
                   />
 
-
                 </g>
-
 
 
                 <!-- CENTRAL HUB -->
@@ -539,12 +491,10 @@
                 <circle
                   cx="474"
                   cy="275"
-                  r="67"
+                  r="82"
                   class="hub"
                 />
 
-
-                <!-- CENTRAL LOGO -->
 
                 <image
                   href="images/ManaClinix_Logo_small.png"
@@ -586,7 +536,6 @@
 
         <div class="section-head">
 
-
           <p class="eyebrow">
             Who we are
           </p>
@@ -611,18 +560,13 @@
 
           </p>
 
-
         </div>
 
-
-
-        <!-- MISSION / VISION -->
 
         <div class="who-grid">
 
 
           <article class="mission-panel">
-
 
             <span class="mission-label">
               Our mission
@@ -646,13 +590,10 @@
 
             </p>
 
-
           </article>
 
 
-
           <article class="vision-panel">
-
 
             <span class="mission-label">
               Our vision
@@ -675,7 +616,6 @@
 
             </p>
 
-
           </article>
 
 
@@ -692,7 +632,6 @@
 
           <div class="team-heading">
 
-
             <h3>
               Our Team
             </h3>
@@ -706,12 +645,8 @@
 
             </p>
 
-
           </div>
 
-
-
-          <!-- FOUNDERS -->
 
           <div class="team-group-title">
             Co-founders
@@ -730,7 +665,7 @@
 
                 <img
                   src="images/GG.png"
-                  alt="Gift Gwawawa
+                  alt="Gift Gwawawa"
                   loading="lazy"
                 >
 
@@ -766,7 +701,7 @@
 
                 <img
                   src="images/LH.png"
-                  alt="Founder B"
+                  alt="Luisa Haiss"
                   loading="lazy"
                 >
 
@@ -795,9 +730,6 @@
           </div>
 
 
-
-          <!-- ADVISORS -->
-
           <div class="team-group-title">
             Advisors
           </div>
@@ -816,10 +748,11 @@
                 <img
                   src="images/advisor-a.jpg"
                   alt="Advisor A"
-                  loading="eager"
+                  loading="lazy"
                 >
 
               </div>
+
 
               <div class="team-info">
 
@@ -851,10 +784,11 @@
                 <img
                   src="images/advisor-b.jpg"
                   alt="Advisor B"
-                  loading="eager"
+                  loading="lazy"
                 >
 
               </div>
+
 
               <div class="team-info">
 
@@ -885,11 +819,12 @@
 
                 <img
                   src="images/advisor-c.jpg"
-                  alt="Advisor C"
-                  loading="eager"
+                  alt="Amedeo Rizzo"
+                  loading="lazy"
                 >
 
               </div>
+
 
               <div class="team-info">
 
@@ -912,7 +847,6 @@
 
           </div>
 
-
         </div>
 
 
@@ -930,253 +864,258 @@
       id="what-we-do"
       class="what-we-do"
     >
-    
+
       <div class="container">
-    
-    
+
+
         <div class="section-head">
-    
+
           <p class="eyebrow">
             What we do
           </p>
-    
-    
+
+
           <h2>
+
             Building a connected
             <span class="heading-green">
               future for clinical research.
             </span>
+
           </h2>
-    
-    
+
+
           <p>
+
             ManaClinix connects patients, healthcare systems, industry
             partners and regional expertise to expand access to medical
             innovation, strengthen clinical research and build sustainable
             healthcare innovation across Africa.
+
           </p>
-    
+
         </div>
-    
-    
-    
+
+
+
         <div class="what-grid">
-    
-    
-          <!-- =====================================================
-               01
-          ====================================================== -->
-    
+
+
+          <!-- 01 -->
+
           <article class="what-card">
-    
+
             <button
               class="what-card-trigger"
               type="button"
               aria-expanded="false"
             >
-    
+
               <span class="what-number">
                 01
               </span>
-    
-    
-              <!-- KEEP TITLE -->
-    
+
+
               <span class="what-title">
                 Connecting Patients to Research
               </span>
-    
-    
+
+
               <span class="what-short">
+
                 Expanding patient access to medical innovation while
                 accelerating recruitment for clinical research.
+
               </span>
-    
-    
+
+
               <span class="what-icon">
                 <span class="plus"></span>
               </span>
-    
+
             </button>
-    
-    
+
+
             <div class="what-card-content">
-    
+
               <p>
+
                 We build trusted patient networks and connected health data
                 to help patients access relevant research opportunities and
                 innovative medicines, while enabling faster, more representative
                 participant recruitment.
+
               </p>
-    
+
             </div>
-    
+
           </article>
-    
-    
-    
-          <!-- =====================================================
-               02
-          ====================================================== -->
-    
+
+
+
+          <!-- 02 -->
+
           <article class="what-card">
-    
+
             <button
               class="what-card-trigger"
               type="button"
               aria-expanded="false"
             >
-    
+
               <span class="what-number">
                 02
               </span>
-    
-    
-              <!-- KEEP TITLE -->
-    
+
+
               <span class="what-title">
                 Enable Access to Local Healthcare Markets
               </span>
-    
-    
+
+
               <span class="what-short">
+
                 Connecting healthcare innovators with the local expertise
                 and partnerships needed to enter African markets.
+
               </span>
-    
-    
+
+
               <span class="what-icon">
                 <span class="plus"></span>
               </span>
-    
+
             </button>
-    
-    
+
+
             <div class="what-card-content">
-    
+
               <p>
+
                 We connect healthcare innovators with healthcare systems,
                 regulators and trusted local partners, providing regional
                 insight and coordination to support responsible market entry
                 and access across African healthcare markets.
+
               </p>
-    
+
             </div>
-    
+
           </article>
-    
-    
-    
-          <!-- =====================================================
-               03
-          ====================================================== -->
-    
+
+
+
+          <!-- 03 -->
+
           <article class="what-card">
-    
+
             <button
               class="what-card-trigger"
               type="button"
               aria-expanded="false"
             >
-    
+
               <span class="what-number">
                 03
               </span>
-    
-    
-              <!-- KEEP TITLE -->
-    
+
+
               <span class="what-title">
                 Developing Innovation Infrastructure.
               </span>
-    
-    
+
+
               <span class="what-short">
+
                 Strengthening the infrastructure, capabilities and regulatory
                 frameworks needed for world-class healthcare innovation.
+
               </span>
-    
-    
+
+
               <span class="what-icon">
                 <span class="plus"></span>
               </span>
-    
+
             </button>
-    
-    
+
+
             <div class="what-card-content">
-    
+
               <p>
+
                 Through regional expertise and strategic advisory support,
                 we work with healthcare systems and partners to strengthen
                 research infrastructure, regulatory frameworks and local
                 capabilities that enable sustainable clinical research and
                 healthcare innovation.
+
               </p>
-    
+
             </div>
-    
+
           </article>
-    
-    
-    
-          <!-- =====================================================
-               04
-          ====================================================== -->
-    
+
+
+
+          <!-- 04 -->
+
           <article class="what-card">
-    
+
             <button
               class="what-card-trigger"
               type="button"
               aria-expanded="false"
             >
-    
+
               <span class="what-number">
                 04
               </span>
-    
-    
-              <!-- KEEP TITLE -->
-    
+
+
               <span class="what-title">
                 Building Technology for Better Trials
               </span>
-    
-    
+
+
               <span class="what-short">
+
                 Creating technology that improves the patient experience
                 and enables more connected clinical research.
+
               </span>
-    
-    
+
+
               <span class="what-icon">
                 <span class="plus"></span>
               </span>
-    
+
             </button>
-    
-    
+
+
             <div class="what-card-content">
-    
+
               <p>
+
                 We develop patient-centred technology that improves access,
                 communication and participation while connecting patients,
                 healthcare providers and research partners to support more
                 efficient clinical trial delivery.
+
               </p>
-    
+
             </div>
-    
+
           </article>
-    
-    
+
+
         </div>
-    
-    
+
+
       </div>
-    
+
     </section>
+
 
 
     <!-- =========================================================
@@ -1192,7 +1131,6 @@
 
 
         <div class="section-head">
-
 
           <p class="eyebrow">
             For Sponsors
@@ -1217,7 +1155,6 @@
 
           </p>
 
-
         </div>
 
 
@@ -1225,12 +1162,9 @@
         <div class="grid-2">
 
 
-          <!-- LEFT -->
-
           <div class="card">
 
             <div class="card-body">
-
 
               <h3>
                 Why conduct trials in Africa
@@ -1239,8 +1173,6 @@
 
               <div class="africa-reasons">
 
-
-                <!-- DIVERSE POPULATIONS -->
 
                 <div class="africa-reason">
 
@@ -1275,8 +1207,6 @@
                 </div>
 
 
-
-                <!-- PATIENT ACCESS -->
 
                 <div class="africa-reason">
 
@@ -1313,8 +1243,6 @@
 
 
 
-                <!-- FIRST MOVER -->
-
                 <div class="africa-reason">
 
                   <span class="subpanel-pictogram">
@@ -1349,8 +1277,6 @@
                 </div>
 
 
-
-                <!-- HEALTH EQUITY -->
 
                 <div class="africa-reason">
 
@@ -1390,14 +1316,11 @@
 
               </div>
 
-
             </div>
 
           </div>
 
 
-
-          <!-- RIGHT -->
 
           <div class="sponsor-value-card">
 
@@ -1443,7 +1366,6 @@
 
               </ul>
 
-
             </div>
 
           </div>
@@ -1472,7 +1394,6 @@
 
         <div class="section-head">
 
-
           <p class="eyebrow">
             For CROs
           </p>
@@ -1496,7 +1417,6 @@
 
           </p>
 
-
         </div>
 
 
@@ -1507,7 +1427,6 @@
           <div class="card">
 
             <div class="card-body">
-
 
               <h3>
                 Why register with ManaClinix
@@ -1666,7 +1585,6 @@
 
               </div>
 
-
             </div>
 
           </div>
@@ -1676,7 +1594,6 @@
           <div class="sponsor-value-card">
 
             <div class="card-body">
-
 
               <h3>
                 CRO Value
@@ -1716,7 +1633,6 @@
 
               </ul>
 
-
             </div>
 
           </div>
@@ -1734,68 +1650,66 @@
     <!-- =========================================================
          06 — FOR PATIENTS
     ========================================================== -->
+
     <section
       id="patients"
       class="block"
     >
-    
+
       <div class="container">
-    
-    
+
+
         <div class="section-head">
-    
+
           <p class="eyebrow">
             For Patients
           </p>
-    
-    
+
+
           <h2>
+
             Clinical trials should feel transparent,
             <span class="heading-green">
               not confusing.
             </span>
+
           </h2>
-    
-    
+
+
           <p>
+
             Patients are at the centre of ManaClinix. We aim to make
             clinical research easier to understand and access, with clear
             information, informed choice and respect for every participant
             throughout the research journey.
+
           </p>
-    
+
         </div>
-    
-    
-    
+
+
+
         <div class="grid-2">
-    
-    
-          <!-- =====================================================
-               LEFT PANEL
-          ====================================================== -->
-    
+
+
           <div class="card">
-    
+
             <div class="card-body">
-    
-    
+
               <h3>
                 Why consider participating in clinical research?
               </h3>
-    
-    
+
+
               <div class="africa-reasons">
-    
-    
-                <!-- 01 -->
-    
+
+
                 <div class="africa-reason">
-    
+
                   <span class="subpanel-pictogram">
-    
+
                     <svg viewBox="0 0 48 48">
-    
+
                       <rect
                         x="12"
                         y="9"
@@ -1803,192 +1717,190 @@
                         height="30"
                         rx="3"
                       />
-    
+
                       <path
                         d="M18 16h12M18 22h12M18 28h8"
                       />
-    
+
                     </svg>
-    
+
                   </span>
-    
-    
+
+
                   <strong>
                     Explore Research Opportunities
                   </strong>
-    
-    
+
+
                   <span>
+
                     Learn about clinical research opportunities that may
                     be relevant to you and understand what participation
                     would involve before deciding.
+
                   </span>
-    
+
                 </div>
-    
-    
-    
-                <!-- 02 -->
-    
+
+
+
                 <div class="africa-reason">
-    
+
                   <span class="subpanel-pictogram">
-    
+
                     <svg viewBox="0 0 48 48">
-    
+
                       <path
                         d="M19 10h10M21 10v6l-7 13a5 5 0 0 0 5 7h10a5 5 0 0 0 5-7l-7-13v-6"
                       />
-    
+
                       <path
                         d="M18 27c4 2 8-2 13 0"
                       />
-    
+
                     </svg>
-    
+
                   </span>
-    
-    
+
+
                   <strong>
                     Contribute to Better Evidence
                   </strong>
-    
-    
+
+
                   <span>
+
                     Participation can help research better reflect diverse
                     populations and generate evidence that is more relevant
                     to patients across Africa.
+
                   </span>
-    
+
                 </div>
-    
-    
-    
-                <!-- 03 -->
-    
+
+
+
                 <div class="africa-reason">
-    
+
                   <span class="subpanel-pictogram">
-    
+
                     <svg viewBox="0 0 48 48">
-    
+
                       <path
                         d="M8 27h8l4-9 5 17 4-10h11"
                       />
-    
+
                     </svg>
-    
+
                   </span>
-    
-    
+
+
                   <strong>
                     Contribute to Medical Progress
                   </strong>
-    
-    
+
+
                   <span>
+
                     By taking part in research, participants can contribute
                     to knowledge that may inform the development of future
                     medicines, treatments and healthcare.
+
                   </span>
-    
+
                 </div>
-    
-    
-    
-                <!-- 04 -->
-    
+
+
+
                 <div class="africa-reason">
-    
+
                   <span class="subpanel-pictogram">
-    
+
                     <svg viewBox="0 0 48 48">
-    
+
                       <path
                         d="M12 8h17l7 7v25H12z"
                       />
-    
+
                       <path
                         d="M29 8v8h7M18 22h12M18 28h12M18 34h7"
                       />
-    
+
                     </svg>
-    
+
                   </span>
-    
-    
+
+
                   <strong>
                     Make an Informed Choice
                   </strong>
-    
-    
+
+
                   <span>
+
                     Receive clear information about the study, including
                     what participation involves, so you can decide freely
                     whether taking part is right for you.
+
                   </span>
-    
+
                 </div>
-    
-    
+
+
               </div>
-    
+
             </div>
-    
+
           </div>
-    
-    
-    
-          <!-- =====================================================
-               RIGHT PANEL
-          ====================================================== -->
-    
+
+
+
           <div class="sponsor-value-card">
-    
+
             <div class="card-body">
-    
-    
+
               <h3>
                 What Patients Can Expect
               </h3>
-    
-    
+
+
               <p class="sponsor-copy">
+
                 ManaClinix is designed around clarity, dignity and trust.
                 We aim to help patients understand research opportunities
                 and support informed, voluntary participation while keeping
                 patient welfare at the centre of the experience.
+
               </p>
-    
-    
+
+
               <ul class="feature-list">
-    
+
                 <li>
                   <span class="check">✓</span>
                   Clear and understandable study information
                 </li>
-    
+
                 <li>
                   <span class="check">✓</span>
                   Support in navigating the research journey
                 </li>
-    
+
                 <li>
                   <span class="check">✓</span>
                   Informed and voluntary decision-making
                 </li>
-    
+
                 <li>
                   <span class="check">✓</span>
                   Respect for participant rights, dignity and privacy
                 </li>
-    
+
               </ul>
-    
-    
-              <!-- IMPORTANT PATIENT DISCLAIMER -->
-    
+
+
               <p class="patient-disclaimer">
+
                 Participation in a clinical trial does not guarantee access
                 to a particular study, treatment or medical benefit.
                 Eligibility depends on the requirements of each study, and
@@ -1996,20 +1908,21 @@
                 involve risks. Study-specific information should always be
                 reviewed with the relevant research and healthcare team
                 before deciding whether to participate.
+
               </p>
-    
-    
+
             </div>
-    
+
           </div>
-    
-    
+
+
         </div>
-    
-    
+
+
       </div>
-    
+
     </section>
+
 
 
     <!-- =========================================================
@@ -2025,7 +1938,6 @@
 
 
         <div class="section-head">
-
 
           <p class="eyebrow">
             Contact
@@ -2050,7 +1962,6 @@
 
           </p>
 
-
         </div>
 
 
@@ -2073,7 +1984,6 @@
 
                 <div class="form-row">
 
-
                   <input
                     type="text"
                     name="name"
@@ -2091,7 +2001,6 @@
                     required
                   >
 
-
                 </div>
 
 
@@ -2103,7 +2012,10 @@
                 >
 
 
-                <select name="enquiry">
+                <select
+                  name="enquiry"
+                  aria-label="Type of enquiry"
+                >
 
                   <option value="">
                     What can we help with?
@@ -2151,14 +2063,26 @@
                   type="submit"
                   class="btn btn-primary"
                 >
-
                   Send inquiry →
-
                 </button>
 
 
-              </form>
+                <!-- PRIVACY NOTICE -->
 
+                <p class="form-privacy-note">
+
+                  We use the information you provide to respond to your
+                  enquiry. Please do not include medical or other sensitive
+                  health information.
+
+                  <a href="privacy.html">
+                    Privacy Policy
+                  </a>
+
+                </p>
+
+
+              </form>
 
             </div>
 
@@ -2174,7 +2098,6 @@
             <div class="card card-dark">
 
               <div class="card-body">
-
 
                 <h3>
                   Let's connect.
@@ -2198,9 +2121,6 @@
 
                 </p>
 
-
-               
-
               </div>
 
             </div>
@@ -2214,9 +2134,17 @@
 
                 <div class="promise-text">
 
-                  Trusted partnerships.<br>
-                  Patient-centred research.<br>
-                  World-class health innovation in Africa.
+                  <span class="promise-teal">
+                    Trusted partnerships.
+                  </span>
+
+                  <span class="promise-green">
+                    Patient-centred research.
+                  </span>
+
+                  <span class="promise-gold">
+                    World-class health innovation in Africa.
+                  </span>
 
                 </div>
 
@@ -2263,26 +2191,33 @@
 
         <div class="footer-links">
 
-
           <a href="#home">
             Home
           </a>
-
 
           <a href="#about">
             Who We Are
           </a>
 
-
           <a href="#what-we-do">
             What We Do
           </a>
-
 
           <a href="#contact">
             Contact
           </a>
 
+          <a href="privacy.html">
+            Privacy Policy
+          </a>
+
+          <a href="cookie-settings.html">
+            Cookie Settings
+          </a>
+
+          <a href="imprint.html">
+            Imprint
+          </a>
 
         </div>
 
@@ -2292,6 +2227,86 @@
     </div>
 
   </footer>
+
+
+
+  <!-- =========================================================
+       COOKIE CONSENT BANNER
+
+       Hidden initially.
+       main.js displays it if no preference has been saved.
+  ========================================================== -->
+
+  <div
+    class="cookie-banner"
+    id="cookieBanner"
+    role="dialog"
+    aria-label="Cookie preferences"
+    aria-describedby="cookieBannerText"
+    hidden
+  >
+
+    <div class="cookie-banner-inner">
+
+
+      <div class="cookie-banner-copy">
+
+        <strong>
+          Your privacy
+        </strong>
+
+
+        <p id="cookieBannerText">
+
+          We use necessary technologies to operate and protect this
+          website. Optional technologies are only used with your
+          permission.
+
+          <a href="privacy.html">
+            Privacy Policy
+          </a>
+
+        </p>
+
+      </div>
+
+
+
+      <div class="cookie-banner-actions">
+
+
+        <button
+          type="button"
+          class="cookie-banner-btn cookie-reject"
+          id="cookieReject"
+        >
+          Reject all
+        </button>
+
+
+        <a
+          href="cookie-settings.html"
+          class="cookie-banner-btn cookie-settings"
+        >
+          Settings
+        </a>
+
+
+        <button
+          type="button"
+          class="cookie-banner-btn cookie-accept"
+          id="cookieAccept"
+        >
+          Accept optional
+        </button>
+
+
+      </div>
+
+
+    </div>
+
+  </div>
 
 
 
