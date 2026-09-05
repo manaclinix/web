@@ -341,3 +341,126 @@ if (yearElement) {
     new Date().getFullYear();
 
 }
+
+/* =========================================================
+   COOKIE / PRIVACY PREFERENCES
+========================================================= */
+
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
+
+    const banner =
+      document.getElementById(
+        "cookieBanner"
+      );
+
+    const acceptButton =
+      document.getElementById(
+        "cookieAccept"
+      );
+
+    const rejectButton =
+      document.getElementById(
+        "cookieReject"
+      );
+
+    const preferenceKey =
+      "manaclinix_cookie_preference";
+
+
+    /* =====================================================
+       CHECK EXISTING CHOICE
+    ====================================================== */
+
+    const existingPreference =
+      localStorage.getItem(
+        preferenceKey
+      );
+
+
+    /*
+       No saved choice:
+       show the banner.
+    */
+
+    if (
+      banner &&
+      !existingPreference
+    ) {
+
+      banner.hidden =
+        false;
+
+    }
+
+
+    /* =====================================================
+       ACCEPT OPTIONAL
+    ====================================================== */
+
+    if (acceptButton) {
+
+      acceptButton.addEventListener(
+        "click",
+        function () {
+
+          localStorage.setItem(
+            preferenceKey,
+            "accepted"
+          );
+
+          if (banner) {
+
+            banner.hidden =
+              true;
+
+          }
+
+
+          /*
+             IMPORTANT
+
+             Optional analytics or marketing
+             scripts should ONLY be activated
+             here after consent.
+
+             At present ManaClinix does not
+             need to load anything here.
+          */
+
+        }
+      );
+
+    }
+
+
+    /* =====================================================
+       REJECT OPTIONAL
+    ====================================================== */
+
+    if (rejectButton) {
+
+      rejectButton.addEventListener(
+        "click",
+        function () {
+
+          localStorage.setItem(
+            preferenceKey,
+            "rejected"
+          );
+
+          if (banner) {
+
+            banner.hidden =
+              true;
+
+          }
+
+        }
+      );
+
+    }
+
+  }
+);
