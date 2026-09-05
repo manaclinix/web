@@ -277,13 +277,9 @@ section.block {
 /* =========================================================
    LOGO
 ========================================================= */
-
 .brand {
   display: flex;
-
   align-items: center;
-
-  gap: 15px;
 
   flex-shrink: 0;
 
@@ -291,29 +287,27 @@ section.block {
 }
 
 
-/*
-   Larger white logo container
-*/
+/* White background behind logo */
 
 .brand-logo {
-  width: 118px;
-  height: 72px;
+  height: 85px; /* ~90% of 94px header */
+  width: 150px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
-  padding: 6px 10px;
+  padding: 5px 8px;
 
-  overflow: hidden;
+  background: #ffffff;
 
   border-radius: 14px;
 
-  background: var(--white);
+  overflow: hidden;
 }
 
+
+/* Actual logo image */
 
 .brand-logo img {
   width: 100%;
@@ -325,10 +319,42 @@ section.block {
 }
 
 
-/*
-   Only relevant if you keep separate
-   ManaClinix text beside the logo
-*/
+/* =========================================================
+   RESPONSIVE LOGO
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .nav-inner {
+    min-height: 86px;
+  }
+
+  .brand-logo {
+    height: 77px;
+    width: 138px;
+
+    border-radius: 13px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .nav-inner {
+    min-height: 78px;
+  }
+
+  .brand-logo {
+    height: 70px;
+    width: 125px;
+
+    padding: 4px 7px;
+
+    border-radius: 12px;
+  }
+
+}
 
 .brand-name {
   color: var(--white);
